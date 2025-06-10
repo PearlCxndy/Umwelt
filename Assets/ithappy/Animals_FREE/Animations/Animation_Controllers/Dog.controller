@@ -31,7 +31,8 @@ BlendTree:
   m_Name: BlendTree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -3231810808582721066, guid: 0c0f883d7bc25dd4d84c3c7795a4a332, type: 3}
+    m_Motion: {fileID: -3231810808582721066, guid: 0c0f883d7bc25dd4d84c3c7795a4a332,
+      type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -39,7 +40,8 @@ BlendTree:
     m_DirectBlendParameter: State
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -5707816420413714838, guid: 0c0f883d7bc25dd4d84c3c7795a4a332, type: 3}
+    m_Motion: {fileID: -5707816420413714838, guid: 0c0f883d7bc25dd4d84c3c7795a4a332,
+      type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -62,7 +64,8 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -6010047484484253120, guid: 0c0f883d7bc25dd4d84c3c7795a4a332, type: 3}
+    m_Motion: {fileID: -6010047484484253120, guid: 0c0f883d7bc25dd4d84c3c7795a4a332,
+      type: 3}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -70,7 +73,17 @@ BlendTree:
     m_DirectBlendParameter: State
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -6051970767711962892}
+    m_Motion: {fileID: -3231810808582721066, guid: 0c0f883d7bc25dd4d84c3c7795a4a332,
+      type: 3}
+    m_Threshold: 0.2
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: State
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: -5707816420413714838, guid: 0c0f883d7bc25dd4d84c3c7795a4a332,
+      type: 3}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -81,7 +94,7 @@ BlendTree:
   m_BlendParameterY: State
   m_MinThreshold: 0
   m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 1
+  m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
 --- !u!91 &9100000
@@ -101,9 +114,15 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   - m_Name: Vert
     m_Type: 1
-    m_DefaultFloat: 0
+    m_DefaultFloat: 0.2
     m_DefaultInt: 0
     m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: IdlePose
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 1
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5

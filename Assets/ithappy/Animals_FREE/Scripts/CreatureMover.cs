@@ -74,19 +74,20 @@ namespace Controller
     m_Movement.Move(Time.deltaTime, in m_Axis, in m_Target, m_IsRun, m_IsMoving, out var animAxis, out var isAir);
 
     // 🔥 Inject fake forward input when rotating in place
-    if (m_IsRotatingInPlace)
-    {
-        animAxis = new Vector2(0f, 0.1f); // Small forward to trigger walk
+            if (m_IsRotatingInPlace)
+        {
             m_Animation.ForceAnimateInPlace();
-    }
+        }
+        else
+        {
+            m_Animation.Animate(in animAxis, m_IsRun ? 1f : 0f, Time.deltaTime);
+        }
 
-    m_Animation.Animate(in animAxis, m_IsRun ? 1f : 0f, Time.deltaTime);
-
-    if (Input.GetMouseButtonDown(0))
-    {
-        m_Animation.TriggerIdlePose();
-    }
-}
+            if (Input.GetMouseButtonDown(0))
+                    {
+                        m_Animation.TriggerIdlePose();
+                    }
+        }
 
 
 
@@ -146,6 +147,8 @@ namespace Controller
             {
                 m_Axis = Vector3.ClampMagnitude(m_Axis, 1f);
                 m_IsMoving = true;
+
+                
             }
         }
 
@@ -360,11 +363,15 @@ namespace Controller
             private Vector2 m_FlowAxis;
             
             public void ForceAnimateInPlace()
-{
-    m_FlowAxis = new Vector2(0f, 0.2f);
-    m_FlowState = Mathf.Clamp01(m_FlowState + Time.deltaTime * k_InputFlow);
-}
+            {
+                // Simulate light walk input flow
+                m_FlowAxis = new Vector2(0f, 0.2f);
+                m_FlowState = Mathf.Clamp01(m_FlowState + Time.deltaTime * k_InputFlow);
 
+                // Force Animator parameters to trigger walk blend
+                m_Animator.SetFloat(m_VerticalID, 0.2f); // Small forward movement
+                m_Animator.SetFloat(m_StateID, 0f);      // Ensure not running
+            }
 
             public AnimationHandler(Animator animator, string verticalID, string stateID)
             {
@@ -375,19 +382,34 @@ namespace Controller
 
 
             }
-public void TriggerIdlePose()
-{
-    m_Animator.SetTrigger("IdlePose");
-}
-
+            public void TriggerIdlePose()
+            {
+                m_Animator.SetTrigger("IdlePose");
+            }
             public void Animate(in Vector2 axis, float state, float deltaTime)
             {
-                m_Animator.SetFloat(m_VerticalID, m_FlowAxis.magnitude);
-                m_Animator.SetFloat(m_StateID, Mathf.Clamp01(m_FlowState));
+                        Vector2 axisDelta = axis - m_FlowAxis;
 
-                m_FlowAxis = Vector2.ClampMagnitude(m_FlowAxis + k_InputFlow * deltaTime * (axis - m_FlowAxis).normalized, 1f);
-                m_FlowState = Mathf.Clamp01(m_FlowState + k_InputFlow * deltaTime * Mathf.Sign(state - m_FlowState));
+            if (axisDelta.sqrMagnitude > 0.0001f)
+            {
+                m_FlowAxis += k_InputFlow * deltaTime * axisDelta.normalized;
             }
+            else
+            {
+                m_FlowAxis = axis; // Fully snap when small
+            }
+
+            m_FlowAxis = Vector2.ClampMagnitude(m_FlowAxis, 1f);
+
+
+                float maxValue = state > 0.5f ? 1f : 0.5f; // Only allow run when explicitly running
+                float vertical = Mathf.Clamp(m_FlowAxis.magnitude, 0f, maxValue);
+
+
+                m_Animator.SetFloat(m_VerticalID, vertical);
+                m_Animator.SetFloat(m_StateID, Mathf.Clamp01(m_FlowState));
+            }
+
 
             public void AnimateIK(in Vector3 target, in LookWeight lookWeight)
             {
