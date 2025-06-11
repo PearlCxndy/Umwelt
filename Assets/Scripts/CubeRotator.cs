@@ -4,27 +4,38 @@ public class CubeRotator : MonoBehaviour
 {
     [Header("Manual or Auto Rotation")]
     public bool rotateAutomatically = true;
-    public float rotationSpeed = 30f; // degrees/second
+    public float rotationSpeed = 30f;
 
-    [Header("Use External Rotation Input (e.g. from Arduino)")]
+    [Header("External Input")]
     public bool useExternalRotation = false;
     public float externalYAngle = 0f;
+
+    private float currentYRotation;
+
+    void Start()
+    {
+        currentYRotation = transform.eulerAngles.y;
+    }
 
     void Update()
     {
         if (useExternalRotation)
         {
-            // Rotate around the Y axis using external value
-            transform.rotation = Quaternion.Euler(0f, externalYAngle, 0f);
+            currentYRotation = externalYAngle;
         }
         else if (rotateAutomatically)
         {
-            // Rotate around Y axis continuously
-            transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime, Space.Self);
+            currentYRotation += rotationSpeed * Time.deltaTime;
         }
+
+        transform.rotation = Quaternion.Euler(0f, currentYRotation, 0f);
     }
 
-    // Call this from another script to update Y angle
+    public float GetCurrentYRotation()
+    {
+        return currentYRotation;
+    }
+
     public void SetYRotation(float angleY)
     {
         externalYAngle = angleY;
