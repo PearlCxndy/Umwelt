@@ -1,92 +1,34 @@
 using UnityEngine;
-using System.Collections;
 
-public class TentacleMouseController : MonoBehaviour
+public class ArmTargetMouseController : MonoBehaviour
 {
-    public Camera mainCamera;
-    public LayerMask groundLayer;
-    public float moveSpeed = 10f;
-    public float liftHeight = 2f;
-    public bool invertX = false;
-    public bool invertZ = false;
+    public Transform octopusBody; // Reference to the octopus
+    public float distance = 3f;
+    public float sensitivity = 0.01f;
+    public float scrollSpeed = 1f;
+    public float minDistance = 1f;
+    public float maxDistance = 5f;
 
-    private Rigidbody rb;
-    private bool isDragging = false;
-    private Vector3 dragStartMouseWorld;
-    private Vector3 dragStartTargetPos;
+    private Vector2 screenCenter;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.useGravity = true;
-        rb.isKinematic = true;
+        screenCenter = new Vector2(Screen.width / 2, Screen.height / 2);
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            TryStartDrag();
-        }
-        else if (Input.GetMouseButtonUp(0) && isDragging)
-        {
-            EndDrag();
-        }
+        // Read mouse offset from screen center
+        Vector2 mouseOffset = (Vector2)Input.mousePosition - screenCenter;
+        Vector3 offsetDir = new Vector3(mouseOffset.x * sensitivity, mouseOffset.y * sensitivity, 1).normalized;
 
-        if (isDragging)
-        {
-            DragTarget();
-        }
-    }
+        // Calculate the new position in front of the octopus
+        Vector3 targetPos = octopusBody.position + octopusBody.TransformDirection(offsetDir * distance);
+        transform.position = targetPos;
 
-    void TryStartDrag()
-    {
-        if (Physics.Raycast(mainCamera.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 100f, groundLayer))
-        {
-            isDragging = true;
-            rb.isKinematic = true;
-
-            dragStartMouseWorld = GetMouseWorldPlane();
-            dragStartTargetPos = transform.position;
-        }
-    }
-
-    void DragTarget()
-    {
-        Vector3 currentMouseWorld = GetMouseWorldPlane();
-        Vector3 offset = currentMouseWorld - dragStartMouseWorld;
-
-        if (invertX) offset.x = -offset.x;
-        if (invertZ) offset.z = -offset.z;
-
-        Vector3 newPosition = dragStartTargetPos + new Vector3(offset.x, 0, offset.z);
-        newPosition.y = dragStartTargetPos.y + liftHeight;
-
-        transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * moveSpeed);
-    }
-
-    void EndDrag()
-    {
-        isDragging = false;
-        StartCoroutine(DelayedDrop());
-    }
-
-    IEnumerator DelayedDrop()
-    {
-        yield return new WaitForSeconds(0.05f);
-        rb.isKinematic = false; // <-- this is what makes it fall!
-    }
-
-    Vector3 GetMouseWorldPlane()
-    {
-        Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
-        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-
-        if (groundPlane.Raycast(ray, out float enter))
-        {
-            return ray.GetPoint(enter);
-        }
-
-        return Vector3.zero;
+        // Distance control with Q/E
+        if (Input.GetKey(KeyCode.Q)) distance -= scrollSpeed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.E)) distance += scrollSpeed * Time.deltaTime;
+        distance = Mathf.Clamp(distance, minDistance, maxDistance);
     }
 }
