@@ -70,6 +70,8 @@ namespace Controller
            private void Update()
 {
     HandleInput();
+    
+    Shader.SetGlobalVector("_PositionMoving", transform.position);
 
     m_Movement.Move(Time.deltaTime, in m_Axis, in m_Target, m_IsRun, m_IsMoving, out var animAxis, out var isAir);
 
