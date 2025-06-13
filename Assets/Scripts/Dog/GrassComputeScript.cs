@@ -12,6 +12,7 @@ public class GrassComputeScript : MonoBehaviour
 {
     // very slow, but will update always
     public bool autoUpdate;
+    public GrassDataAsset grassDataAsset;
 
     // main camera
     private Camera m_MainCamera;
@@ -170,10 +171,17 @@ public class GrassComputeScript : MonoBehaviour
 
         // Don't do anything if resources are not found,
         // or no vertex is put on the mesh.
-        if (grassData.Count == 0)
-        {
-            return;
-        }
+        if (grassDataAsset != null)
+{
+    grassData = grassDataAsset.grassData;
+}
+
+if (grassData == null || grassData.Count == 0)
+{
+    Debug.LogWarning("No grass data loaded.");
+    return;
+}
+
 
         if (currentPresets.shaderToUse == null || currentPresets.materialToUse == null)
         {

@@ -1,16 +1,16 @@
-﻿Shader "Unlit/DoubleSidedPortal"
+﻿Shader "Unlit/PortalRenderTexture"
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        _MainTex ("Render Texture", 2D) = "white" {}
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "Queue"="Transparent" "RenderType"="Transparent" }
         Cull Off
         Lighting Off
-        ZWrite On
-        ZTest LEqual
+        ZWrite Off
+        Blend SrcAlpha OneMinusSrcAlpha
 
         Pass
         {
@@ -20,6 +20,7 @@
             #include "UnityCG.cginc"
 
             sampler2D _MainTex;
+
             struct v2f {
                 float4 pos : SV_POSITION;
                 float2 uv : TEXCOORD0;
