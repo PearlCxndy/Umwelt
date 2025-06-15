@@ -133,5 +133,5 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _SphereCenter: {r: 745.71423, g: 41.596664, b: 1283.5247, a: 0}
+    - _SphereCenter: {r: 727.1141, g: 41.6, b: 1314.1924, a: 0}
   m_BuildTextureStacks: []

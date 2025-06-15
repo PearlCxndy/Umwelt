@@ -3,17 +3,17 @@ using UnityEngine;
 public class TriggerCanvasAndSpawn : MonoBehaviour
 {
     [Header("References")]
-    public Canvas canvasImage;                  
-    public GameObject objectToAppear;           
-    public GameObject particleTrailPrefab;      
-    public Transform trailStartPoint;           
-    public Transform trailEndPoint;             
-    public ParticleSystem fogParticleSystem;    
-    public Transform dog;                       // Dog reference for following
+    public Canvas canvasImage;
+    public GameObject sphereObject; 
+    public GameObject objectToAppear;
+    public GameObject particleTrailPrefab;
+    public Transform trailStartPoint;
+    public Transform trailEndPoint;
+    public ParticleSystem fogParticleSystem;
+    public Transform dog;
 
     private bool playerInTrigger = false;
     private GameObject player;
-
     private bool particleSpawned = false;
     private bool fogActivated = false;
 
@@ -22,16 +22,19 @@ public class TriggerCanvasAndSpawn : MonoBehaviour
         if (canvasImage != null)
             canvasImage.enabled = false;
 
-        if (objectToAppear != null)
-            objectToAppear.SetActive(false);
+        if (sphereObject != null)
+            sphereObject.SetActive(false);  // sphere starts invisible
 
         if (fogParticleSystem != null)
             fogParticleSystem.Stop();
+
+        if (objectToAppear != null)
+        objectToAppear.SetActive(false);
+
     }
 
     void Update()
     {
-        // Move fog to follow dog if activated
         if (fogActivated && fogParticleSystem != null && dog != null)
         {
             fogParticleSystem.transform.position = dog.position;
@@ -41,14 +44,14 @@ public class TriggerCanvasAndSpawn : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                // Show object
-                if (objectToAppear != null)
+                // Show sphere
+                if (sphereObject != null && !sphereObject.activeSelf)
                 {
-                    objectToAppear.SetActive(true);
-                    Debug.Log("Object appeared after pressing E.");
+                    sphereObject.SetActive(true);
+                    Debug.Log("Sphere appeared.");
                 }
 
-                // Spawn particle trail only once
+                // Spawn particle trail
                 if (!particleSpawned && particleTrailPrefab != null)
                 {
                     if (trailStartPoint == null || trailEndPoint == null)
@@ -59,6 +62,12 @@ public class TriggerCanvasAndSpawn : MonoBehaviour
 
                     GameObject particle = Instantiate(particleTrailPrefab);
                     CurvedTrailMover mover = particle.GetComponent<CurvedTrailMover>();
+
+                    if (objectToAppear != null && !objectToAppear.activeSelf)
+                    {
+                        objectToAppear.SetActive(true);
+                        Debug.Log("Other object appeared.");
+                    }
 
                     if (mover != null)
                     {
@@ -72,7 +81,7 @@ public class TriggerCanvasAndSpawn : MonoBehaviour
                     }
                 }
 
-                // Activate fog once when pressing E
+                // Activate fog
                 if (!fogActivated && fogParticleSystem != null)
                 {
                     fogParticleSystem.Play();
