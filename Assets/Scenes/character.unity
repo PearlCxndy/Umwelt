@@ -7436,7 +7436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86a29d14bf6de4f5baf88e5f6282f363, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  materialToControl: {fileID: 2100000, guid: fbad0b1042092418cac77528fd3a520b, type: 2}
+  materialToControl: {fileID: 2100000, guid: 5806e88c407fb42bb92ba3d2c574bb38, type: 2}
   startingTime: 9
   timerSpeed: 1
   finalSlowDownFactor: 0.04

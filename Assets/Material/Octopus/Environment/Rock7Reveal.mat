@@ -26,7 +26,7 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _CountdownTime: 0.49556005
+    - _CountdownTime: 9
     - _Scale: 15
     m_Colors: []
   m_BuildTextureStacks: []
