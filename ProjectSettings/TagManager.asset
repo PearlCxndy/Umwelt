@@ -4,16 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Tree
+  - Paintable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Surface
   - Water
   - UI
-  - 
-  - 
+  - SquidBody
+  - Tentacle
   - 
   - 
   - 
