@@ -8,7 +8,9 @@ public class CubeRotator : MonoBehaviour
 
     [Header("External Input")]
     public bool useExternalRotation = false;
-    public float externalYAngle = 0f;
+    public float externalYAngle = 4f;
+    public CubeEncoder encoderReader; //referencing the encoder serial coms script
+
 
     [Header("Mouse Drag Control")]
     public bool allowMouseDrag = true;
@@ -19,6 +21,8 @@ public class CubeRotator : MonoBehaviour
     private Vector3 lastMousePosition;
 
     private Vector3 centerOffset;  // center offset
+
+    
 
     void Start()
     {
@@ -43,6 +47,13 @@ public class CubeRotator : MonoBehaviour
         }
 
         ApplyRotationAroundCenter();
+
+        if (useExternalRotation && encoderReader != null)
+        {
+            externalYAngle = encoderReader.encoderAngle;
+            currentYRotation = externalYAngle;
+        }
+
     }
 
     void HandleMouseDrag()
@@ -65,6 +76,7 @@ public class CubeRotator : MonoBehaviour
             isDragging = false;
         }
     }
+
 
     void ApplyRotationAroundCenter()
     {
@@ -105,3 +117,5 @@ public class CubeRotator : MonoBehaviour
         externalYAngle = angleY;
     }
 }
+
+
