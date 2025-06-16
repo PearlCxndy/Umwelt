@@ -1031,89 +1031,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &587704036
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7511180232019162148, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_Name
-      value: Squid
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -11.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -10.32
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 818c5a1ba0d9810439f11299463f2294, type: 3}
+--- !u!4 &609510275 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 480174, guid: 46d69f622d1354ee0820b7921e262b38,
+    type: 3}
+  m_PrefabInstance: {fileID: 559223255}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &710819308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1914,12 +1837,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1111920798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1056989816 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8648425310868573238, guid: 818c5a1ba0d9810439f11299463f2294,
-    type: 3}
-  m_PrefabInstance: {fileID: 587704036}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1086375412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2123,7 +2040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb9c8e122d2d45b8ae61eaa423fc9d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animalRoot: {fileID: 1056989816}
+  animalRoot: {fileID: 609510275}
   portalView: {fileID: 978427984}
   portalMesh: {fileID: 1600739367}
   portalShader: {fileID: 4800000, guid: e4d776d70efdb4ca2950ea549c7db427, type: 3}
@@ -2444,6 +2361,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c87f7a3297c647bb972ab8f0682be09, type: 3}
+--- !u!21 &1508318132
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_ShaderGraph GrassUnlitBasic(Clone)
+  m_Shader: {fileID: -6465566751694194690, guid: 0369f70da2bbb4113ab9de66b7493147,
+    type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Blend: 0
+    - _BlendMult: 1
+    - _BlendOff: 0
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &1600739366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,51 +2929,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!21 &1853623941
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_ShaderGraph GrassUnlitBasic(Clone)
-  m_Shader: {fileID: -6465566751694194690, guid: 0369f70da2bbb4113ab9de66b7493147,
-    type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - unity_Lightmaps:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_LightmapsInd:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - unity_ShadowMasks:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Blend: 0
-    - _BlendMult: 1
-    - _BlendOff: 0
-    - _QueueControl: 0
-    - _QueueOffset: 0
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1001 &1871278068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3314,7 +3231,6 @@ SceneRoots:
   - {fileID: 581496510}
   - {fileID: 1904583503}
   - {fileID: 1188495194}
-  - {fileID: 587704036}
   - {fileID: 1086375414}
   - {fileID: 1616521154}
   - {fileID: 56751887}
