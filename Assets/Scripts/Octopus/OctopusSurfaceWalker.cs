@@ -1,77 +1,90 @@
 using UnityEngine;
 
-public class SurfaceWalker : MonoBehaviour
+[RequireComponent(typeof(Rigidbody))]
+public class OctopusController : MonoBehaviour
 {
+    [Header("Movement Settings")]
     public float moveSpeed = 3f;
-    public float rotationSpeed = 5f;
-    public float raycastDistance = 2f;
-
-    public Transform orientationReference; // Optional: camera or head
+    public float rotationSpeed = 50f;
+    public float jumpForce = 5f;
     public LayerMask groundMask;
+    public float groundCheckDistance = 0.6f;
 
-    private Vector3 currentSurfaceNormal = Vector3.up;
+    private Rigidbody rb;
+    private bool isGrounded;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.freezeRotation = true;
+    }
 
     void Update()
     {
-        HandleSurfaceAlignment();
+        HandleRotation();
+        HandleJump();
+    }
+
+    void FixedUpdate()
+    {
         HandleMovement();
+        CheckGrounded();
     }
 
-void HandleSurfaceAlignment()
+    void HandleRotation()
+    {
+        float rotateInput = Input.GetAxis("Horizontal"); // A/D
+        if (Mathf.Abs(rotateInput) > 0.01f)
+        {
+            Quaternion rotation = Quaternion.AngleAxis(rotateInput * rotationSpeed * Time.deltaTime, transform.up);
+            rb.MoveRotation(rb.rotation * rotation);
+        }
+    }
+
+void HandleMovement()
 {
-    // Step 1: Cast a sphere downward from above
-    Vector3 rayOrigin = transform.position + currentSurfaceNormal * 0.3f;
-    Vector3 rayDirection = -currentSurfaceNormal;
+    float moveInput = Input.GetAxis("Vertical");
 
-    RaycastHit hit;
-    if (Physics.SphereCast(rayOrigin, 0.4f, rayDirection, out hit, raycastDistance, groundMask))
+    if (Mathf.Abs(moveInput) > 0.01f)
     {
-        Vector3 hitNormal = hit.normal;
+        // Cast a ray to find the surface normal below the octopus
+        RaycastHit hit;
+        Vector3 rayOrigin = transform.position + Vector3.up * 0.2f;
 
-        // Step 2: Smoothly blend the surface normal
-        currentSurfaceNormal = Vector3.Lerp(currentSurfaceNormal, hitNormal, Time.deltaTime * rotationSpeed);
+        if (Physics.Raycast(rayOrigin, Vector3.down, out hit, groundCheckDistance + 0.3f, groundMask))
+        {
+            Vector3 surfaceNormal = hit.normal;
 
-        // Step 3: Compute target rotation with up aligned to surface normal
-        Quaternion surfaceAlignRotation = Quaternion.FromToRotation(transform.up, currentSurfaceNormal) * transform.rotation;
+            // Calculate slope-aware forward direction
+            Vector3 slopeForward = Vector3.ProjectOnPlane(transform.forward, surfaceNormal).normalized;
 
-        // Step 4: Apply the new rotation smoothly
-        transform.rotation = Quaternion.Slerp(transform.rotation, surfaceAlignRotation, Time.deltaTime * rotationSpeed);
+            // Move along slope
+            Vector3 move = slopeForward * moveInput * moveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + move);
 
-        // Step 5: Stick to the surface with small offset
-        transform.position = hit.point + currentSurfaceNormal * 0.05f;
-    }
-    else
-    {
-        Debug.DrawRay(rayOrigin, rayDirection * raycastDistance, Color.red);
+            // Optional: push down slightly to prevent floating
+            rb.AddForce(-surfaceNormal * 5f, ForceMode.Acceleration);
+        }
+        else
+        {
+            // Fallback move (air)
+            Vector3 move = transform.forward * moveInput * moveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + move);
+        }
     }
 }
 
-    void HandleMovement()
-{
-    // Get input
-    float h = Input.GetAxis("Horizontal");
-    float v = Input.GetAxis("Vertical");
-
-    // Find tangent direction relative to current surface normal
-    Vector3 forward = Vector3.Cross(transform.right, currentSurfaceNormal);
-    Vector3 right = Vector3.Cross(currentSurfaceNormal, forward);
-
-    Vector3 moveDir = (right * h + forward * v).normalized;
-
-    // Move in a way that follows the surface curve
-    Vector3 newPosition = transform.position + moveDir * moveSpeed * Time.deltaTime;
-
-    // Project new position onto surface
-    RaycastHit hit;
-    if (Physics.Raycast(newPosition + currentSurfaceNormal * 2f, -currentSurfaceNormal, out hit, 5f, groundMask))
+    void HandleJump()
     {
-        newPosition = hit.point;
-        transform.position = newPosition;
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
     }
-    else
+
+    void CheckGrounded()
     {
-        // fallback movement
-        transform.position += moveDir * moveSpeed * Time.deltaTime;
+        Ray ray = new Ray(transform.position + Vector3.up * 0.1f, Vector3.down);
+        isGrounded = Physics.Raycast(ray, groundCheckDistance, groundMask);
     }
-}
 }
