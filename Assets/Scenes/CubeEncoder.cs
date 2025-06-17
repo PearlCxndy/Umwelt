@@ -46,7 +46,7 @@ public class CubeEncoder : MonoBehaviour
                 currentCount = int.Parse(line.Trim());
 
                 // Calculate angle and expose it
-                encoderAngle = currentCount * rotationPerStep;
+                encoderAngle = currentCount * (rotationPerStep * 10);
                 Debug.Log("Encoder Count: " + currentCount + " | Angle: " + encoderAngle);
             }
             catch (System.TimeoutException) { }

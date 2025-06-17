@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50fe2e62e6934e7c99f4b4bf8acca44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenMat: {fileID: 2100000, guid: 1d40f6b63cbfb4d608c34a68ae39cc75, type: 2}
+  screenMat: {fileID: 2100000, guid: e6373a01aa61e4f3d818af54c1be4c0a, type: 2}
   screenObject: {fileID: 99153721}
 --- !u!114 &99153718
 MonoBehaviour:
@@ -695,7 +695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a50fe2e62e6934e7c99f4b4bf8acca44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenMat: {fileID: 2100000, guid: 1d40f6b63cbfb4d608c34a68ae39cc75, type: 2}
+  screenMat: {fileID: 2100000, guid: e6373a01aa61e4f3d818af54c1be4c0a, type: 2}
   screenObject: {fileID: 99153721}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
