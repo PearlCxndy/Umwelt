@@ -247,7 +247,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &82607950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -707,7 +707,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &195764355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1278,7 +1278,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &232111326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1426,7 +1426,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &318436953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1964,7 +1964,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &409986396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2088,7 +2088,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &423884002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2583,7 +2583,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &546529044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3562,7 +3562,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!1 &837335524
 GameObject:
   m_ObjectHideFlags: 0
@@ -3755,7 +3755,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!1 &911265219 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 932840395452608569, guid: 167744f06e1cb4a4da962bbda66bcb1f,
@@ -4140,9 +4140,9 @@ GameObject:
   - component: {fileID: 995985585}
   - component: {fileID: 995985584}
   - component: {fileID: 995985586}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: SearchTargetR
-  m_TagString: Untagged
+  m_TagString: tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4276,6 +4276,8 @@ MonoBehaviour:
   ReflectionRenderTexture: {fileID: 8400000, guid: bf208865ff8d0467bb9ad9ca81355c2b,
     type: 2}
   ReflectionResloution: 512
+  SourceCamera: {fileID: 161677576}
+  SourceCameraTag: ReflectionSource
 --- !u!64 &1005926890
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4910,7 +4912,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &1129434618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5180,7 +5182,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &1169492926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5366,7 +5368,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!1001 &1437303678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5492,7 +5494,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!1 &1454628900
 GameObject:
   m_ObjectHideFlags: 0
@@ -5506,9 +5508,9 @@ GameObject:
   - component: {fileID: 1454628902}
   - component: {fileID: 1454628903}
   - component: {fileID: 1454628905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SearchTargetL
-  m_TagString: Untagged
+  m_TagString: tentacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7443,7 +7445,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &1884551464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7577,7 +7579,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &1931965593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7630,7 +7632,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &1948819840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7677,7 +7679,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &1972097435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7739,7 +7741,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!1001 &2060113394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7931,7 +7933,7 @@ MonoBehaviour:
   slowDownThreshold: 1
   tentacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &2062035849
 MonoBehaviour:
   m_ObjectHideFlags: 0

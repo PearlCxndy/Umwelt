@@ -7,14 +7,15 @@ TagManager:
   - Tree
   - Paintable
   - ReflectionSource
+  - tentacle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Surface
   - Water
   - UI
-  - 
+  - tentacle
   - 
   - 
   - 
