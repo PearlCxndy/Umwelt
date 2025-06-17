@@ -8,7 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ScreenScanner
-  m_Shader: {fileID: -6465566751694194690, guid: 34d07c5271cc449558b950f298ba88c1, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 34d07c5271cc449558b950f298ba88c1,
+    type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -41,11 +42,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Opacity: 10.0982275
-    - _Range: 99.89086
+    - _Opacity: 10.820198
+    - _Range: 99.08867
     - _WaveFallof: 2.2
     m_Colors:
     - _Color: {r: 0.32959747, g: 3.1229632, b: 4.110274, a: 0}
     - _DENEME: {r: 0.008588195, g: 1, b: 0, a: 0}
-    - _Position: {r: 0.34936798, g: 3.000157, b: 413.63617, a: 0}
+    - _Position: {r: 0.07811407, g: 1.9955622, b: 25.799988, a: 0}
   m_BuildTextureStacks: []
