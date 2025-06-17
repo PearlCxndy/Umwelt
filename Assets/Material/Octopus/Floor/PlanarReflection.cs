@@ -9,6 +9,16 @@ public class PlanarReflection : MonoBehaviour
     [SerializeField] private Camera ReflectionCamera;
     [SerializeField] private RenderTexture ReflectionRenderTexture;
     [SerializeField] private int ReflectionResloution;
+     [SerializeField] private Camera SourceCamera;  
+    [SerializeField] private string SourceCameraTag = "ReflectionSource";
+
+private void Start()
+{
+    GameObject cameraObj = GameObject.FindGameObjectWithTag(SourceCameraTag);
+    if (cameraObj != null)
+        SourceCamera = cameraObj.GetComponent<Camera>();
+}
+
 
     private void LateUpdate()
     {
