@@ -2,27 +2,21 @@ using UnityEngine;
 
 public class CubeRotator : MonoBehaviour
 {
-    [Header("Manual or Auto Rotation")]
+    [Header("Rotation Modes")]
     public bool rotateAutomatically = true;
     public float rotationSpeed = 30f;
 
-    [Header("External Input")]
+    [Header("External Rotation Input")]
     public bool useExternalRotation = false;
-    public float externalYAngle = 4f;
-    public CubeEncoder encoderReader; //referencing the encoder serial coms script
+    public float externalYAngle = 0f;
+    public CubeEncoder encoderReader;
 
-
-    [Header("Mouse Drag Control")]
-    public bool allowMouseDrag = true;
-    public float mouseSensitivity = 0.2f;
+    [Header("Manual Key Control")]
+    public bool allowKeyControl = true;
+    public float keyRotationSpeed = 90f; // degrees per second
 
     private float currentYRotation;
-    private bool isDragging = false;
-    private Vector3 lastMousePosition;
-
-    private Vector3 centerOffset;  // center offset
-
-    
+    private Vector3 centerOffset;
 
     void Start()
     {
@@ -32,55 +26,36 @@ public class CubeRotator : MonoBehaviour
 
     void Update()
     {
-        if (allowMouseDrag)
+        bool isManuallyControlling = false;
+
+        if (allowKeyControl)
         {
-            HandleMouseDrag();
+            float input = Input.GetAxis("Horizontal"); // A/D or Left/Right
+            if (Mathf.Abs(input) > 0.01f)
+            {
+                currentYRotation += input * keyRotationSpeed * Time.deltaTime;
+                isManuallyControlling = true;
+            }
         }
 
-        if (useExternalRotation)
+        if (!isManuallyControlling)
         {
-            currentYRotation = externalYAngle;
-        }
-        else if (rotateAutomatically && !isDragging)
-        {
-            currentYRotation += rotationSpeed * Time.deltaTime;
+            if (useExternalRotation && encoderReader != null)
+            {
+                externalYAngle = encoderReader.encoderAngle;
+                currentYRotation = externalYAngle;
+            }
+            else if (rotateAutomatically)
+            {
+                currentYRotation += rotationSpeed * Time.deltaTime;
+            }
         }
 
         ApplyRotationAroundCenter();
-
-        if (useExternalRotation && encoderReader != null)
-        {
-            externalYAngle = encoderReader.encoderAngle;
-            currentYRotation = externalYAngle;
-        }
-
     }
-
-    void HandleMouseDrag()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            isDragging = true;
-            lastMousePosition = Input.mousePosition;
-        }
-        else if (Input.GetMouseButton(0) && isDragging)
-        {
-            Vector3 delta = Input.mousePosition - lastMousePosition;
-            float deltaY = (delta.x / Screen.width) * 360f;  // much smoother drag
-
-            currentYRotation += deltaY;
-            lastMousePosition = Input.mousePosition;
-        }
-        else if (Input.GetMouseButtonUp(0))
-        {
-            isDragging = false;
-        }
-    }
-
 
     void ApplyRotationAroundCenter()
     {
-        // Move object to center, rotate, then move back
         transform.position -= centerOffset;
         transform.rotation = Quaternion.Euler(0f, currentYRotation, 0f);
         transform.position += centerOffset;
@@ -97,7 +72,6 @@ public class CubeRotator : MonoBehaviour
         }
 
         Bounds combinedBounds = renderers[0].bounds;
-
         foreach (Renderer rend in renderers)
         {
             combinedBounds.Encapsulate(rend.bounds);
@@ -117,5 +91,3 @@ public class CubeRotator : MonoBehaviour
         externalYAngle = angleY;
     }
 }
-
-
