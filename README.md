@@ -75,11 +75,9 @@ We also used notebooks occasionally to sketch ideas, but Figma was our main coll
 
 After finalizing our concept, we entered a deep research phase using various sources. Jessica recommended An Immense World by Ed Yong, which explores how animals perceive the world through different senses. We also pulled information from online articles (see bibliography), YouTube videos, Spotify podcasts, and more. 
 
-![reasearch]()
-
 For primary research, we visited the Natural History Museum in London and the National Museum of Scotland. These trips had a big impact—we observed how museums present animal perception through interactive installations. We also recorded rare bird sounds ourselves, since many weren’t available online; these recordings are featured in Ceci Branch’s work.
 
-![Museum]()
+![image](https://github.com/user-attachments/assets/7678e10e-050d-440f-bb42-ad27dbbca1a0)
 
 **Challenges and Refinements**
 **Issue:** We faced time constraints that limited our ability to visit more museums, and some useful articles were behind paywalls. Although we couldn’t finish the entire book Jessica recommended (An Immense World), the specific chapters we did read were valuable.
