@@ -26,8 +26,13 @@ After deciding on the idea of the project, we went into a deep and extensive pha
 
 This research phase made us realize we can expand the idea of time perception into various different sensory experiences. This also gave us ideas on creating a variety of playable experiences, and we could support our design proccess with a wide range of resources.
 
+**3. Technical and Visual Research**</br>
+We explored some of the interactions, technologies, environments and tools that  we can implement our idea together. We brainstormed some immersive experiences such as using an [immersive domes](https://www.limelight.art/portfolio/magical-dome-the-many-faces-of-entropy), or projecting on [curved screens](https://discussions.unity.com/t/360-panorama-curved-screen/884403). 
+
 
 **3.Building Each Scene**</br>
+
+After finsihing research 
 **4.Making the Digital Cube**</br>
 
 **5. Merging the Digital Cube with the Individual Scenes**</br>
