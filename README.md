@@ -103,7 +103,7 @@ Ceci have to write that
 Bam have to write that 
 **Issue:**
 **Solution:**
-We firstly tried connecting Unity to Madmapper. However, because of the license isssues we couldn't use it. We decided to switch to sweet old Touchdesigner. 
+We firstly tried connecting Unity to Madmapper. However, because of the license issues we couldn't use it. We decided to switch to Touchdesigner. Where we used [this video](https://www.youtube.com/watch?v=iIwcqgAPVWI) to connect the Unity Scene to Touchdesigner using [Klak Spout](https://github.com/keijiro/KlakSpout) package. 
 
 ## Final Project Images 
 
