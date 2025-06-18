@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 <<<<<<<< Updated upstream:Assets/Scenes/Cube.meta
 guid: c04cc06ebf799422b9a76e437adca9b7
 folderAsset: yes
@@ -7,6 +8,17 @@ guid: 02a49d59c39314f678eb3982664293e9
 >>>>>>>> Stashed changes:Assets/BAT/CM_Final_08.sln.meta
 DefaultImporter:
   externalObjects: {}
+=======
+<<<<<<<< Updated upstream:Assets/Settings/Busondeneme.asset.meta
+guid: d1e29b05c9fe24c548f1658c56199f96
+NativeFormatImporter:
+========
+guid: 02a49d59c39314f678eb3982664293e9
+DefaultImporter:
+>>>>>>>> Stashed changes:Assets/BAT/CM_Final_08.sln.meta
+  externalObjects: {}
+  mainObjectFileID: 11400000
+>>>>>>> Stashed changes
   userData: 
   assetBundleName: 
   assetBundleVariant: 
