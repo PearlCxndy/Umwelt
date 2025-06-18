@@ -9,6 +9,7 @@ The project aims to reflect non-human organisms sensory experiences of world, th
 ---
 ## Technical Description
 The project is an interactive, projection mapped, revolving cube. A digital environment of four different animals' visions, is reflected as a game (made in Unity) on each vertical face. The revolving happens manually and an autoencoder reads the rotation data and sends it into Unity and to Touhdesigner(for projection mapping), consecutivley. 
+![image](https://github.com/user-attachments/assets/6f8c7ca7-5303-4598-86ab-dc3d2b6b9617)
 
 
 ## Proccess
