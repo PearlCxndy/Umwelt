@@ -46,8 +46,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Opacity: 55.358234
-    - _Range: 49.60196
+    - _Opacity: 10.395532
+    - _Range: 49.505585
     - _WaveFalloff: 2.2
     - _WaveFaloff: 2.2
     m_Colors:
