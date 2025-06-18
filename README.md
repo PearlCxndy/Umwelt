@@ -17,34 +17,34 @@ The interaction happens as the diagram below, where the user spins the cube to e
 
 **Technical Equipment**
   
-<table>
-  <tr>
-    <th>Hardware</th>
-    <th>Software</th>
-  </tr>
-  <tr>
-    <td>
-      <ul>
-        <li>Cardboard box</li>
-        <li>Rotary encoder</li>
-        <li>Arduino Uno</li>
-        <li>Breadboard</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>TouchDesigner</li>
-        <li>Unity</li>
-        <li>GitHub Desktop</li>
-        <li>Arduino IDE</li>
-        <li>Visual Studio Code</li>
-        <li>Fusion 360</li>
-        <li>Rhino Software</li>
-        <li>Blender</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px;">
+
+<div style="flex: 1;">
+  <h3>Hardware</h3>
+  <ul>
+    <li>Cardboard box</li>
+    <li>Rotary encoder</li>
+    <li>Arduino Uno</li>
+    <li>Breadboard</li>
+  </ul>
+</div>
+
+<div style="flex: 1;">
+  <h3>Software</h3>
+  <ul>
+    <li>TouchDesigner</li>
+    <li>Unity</li>
+    <li>GitHub Desktop</li>
+    <li>Arduino IDE</li>
+    <li>Visual Studio Code</li>
+    <li>Fusion 360</li>
+    <li>Rhino Software</li>
+    <li>Blender</li>
+  </ul>
+</div>
+
+</div>
+
 
   ![pictures]()
 
