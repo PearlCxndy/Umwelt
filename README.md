@@ -4,7 +4,7 @@
 
 ## Project Description
 
-The project aims to reflect non-human organisms sensory experiences of world, through an interactive digital installation. The project name is the term, "Umwelt" that has been mentioned in the book *An Immense World* by Ed Yong. This termtranslates to "environment" or "surroundings" but also connotes the particular perspective of a particular organism, shaped by its sensory organs capabilities and perceptual systems. Our aim was to expand the vision of non-human beings into humans' sensory world, to allow them to  
+The project aims to reflect non-human organisms sensory experiences of world, through an interactive digital installation. The project name is the term, "Umwelt" that has been mentioned in the book *An Immense World* by Ed Yong. This termtranslates to "environment" or "surroundings" but also connotes the particular perspective of a particular organism, shaped by its sensory organs capabilities and perceptual systems. This project aims to make the user to asks philosophical questions such as "How does is my perception is shaping the way I think" and ethical questions as "Is the ideal world I am imagining for myself is also ideal for another species". The project aims to help the user locate themseles (as humans) within the world, equally with all of their neighbours that they are sharing this world. 
 
 ---
 ## Technical Description
@@ -19,17 +19,23 @@ The interaction happens as the diagram below, where the user spins the cube to e
 
 **1. Ideation**</br>
 
-When we were having a brainstorming session as a group, we thought about how dogs can smell the past existences, movements, occassions within a spacial setting. This was our starting point, in order to use the time perception as a comparsion between human and non-human beings. After this, we went into a deep and extensive phase of research where we used variety of resources such as books, articles, videos, podcasts, museums, and bird recordings lol. 
+When we were having a brainstorming session as a group, we thought about how dogs can smell the past existences, movements, occassions within a spacial setting. This was our starting point, in order to use the time perception as a comparsion between human and non-human beings. 
+
+**2. Research**</br>
+After deciding on the idea of the project, we went into a deep and extensive phase of research where we used variety of resources such as books, articles, videos, podcasts, museums, and bird recordings lol. 
 
 This research phase made us realize we can expand the idea of time perception into various different sensory experiences. This also gave us ideas on creating a variety of playable experiences, and we could support our design proccess with a wide range of resources.
 
 
-**2. Research**
-**3.Building Each Scene**
-**4.Making the Digital Cube**
-**5. Merging the Digital Cube with the Individual Scenes**
-**6. Modeling and Laser Cutting the Revolving Cube**
-**7. Projection Mapping**
+**3.Building Each Scene**</br>
+**4.Making the Digital Cube**</br>
+
+**5. Merging the Digital Cube with the Individual Scenes**</br>
+
+**6. Modeling and Laser Cutting the Revolving Cube**</br>
+
+**7. Projection Mapping**</br>
+
 
 ## Final Project Images 
 ---
