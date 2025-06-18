@@ -56,10 +56,14 @@ The interaction happens as the diagram below, where the user spins the cube to e
 
 **1. Ideation**</br>
 
-During our group brainstorming, we were inspired by how dogs can smell traces of the past—movements and events in a space. This sparked our initial idea to explore time perception in humans vs. non-human animals. As we dug into references, we gradually narrowed the scope, eventually focusing on environmental and urban concepts shaped by animal perception.
+During our group brainstorming, we were inspired by how dogs can smell traces of the past—movements and events in a space. This sparked our initial idea to explore time perception in humans vs. non-human animals. As we dug into references, we gradually narrowed the scope, eventually focusing on environmental and urban concepts shaped by animal perception.We focused our research on the question: How could we represent non-human senses through immersive tech? This guided our design and technical choices. We considered visiting the Nerve Lab in Holborn and attending a movement workshop, an idea suggested by Mahalia to help us explore physical interaction in immersive spaces. Although we didn’t manage to visit, it remains a strong possibility for future development. At CSM’s Art & Science department, we tested our ideas and received valuable feedback. Mahalia also helped us refine the concept by suggesting ways to represent animal senses—like sight, smell, and sound—through immersive technology.
+
+![image](https://github.com/user-attachments/assets/eece033d-8cd6-4d99-b65a-f3c79883c07d)
 
 **Challenges and Refinements**
-**Issue:** We originally planned to explore time perception, but due to limitations in Unity gameplay, we narrowed the focus to animal perception to create a more immersive experience. Some larger ideas were dropped due to budget constraints, and CCI couldn’t provide resources like a big screen or interactive space.
+
+**Issue:** We originally planned to explore time perception, but due to limitations in Unity gameplay, we narrowed the focus to animal perception to create a more immersive experience. Some larger ideas were dropped due to budget constraints, and CCI couldn’t provide resources like a big screen or interactive space. We had also hoped to contact additional experts and collaborators to support the project, but time constraints made this difficult. However, it would be a valuable direction to pursue in the future.
+
 **Solution:** To manage the project effectively, we used tools like Notion and Figma. With a team of four, communication could have been difficult, but Notion helped us assign and adjust tasks easily (see Figure 1 for our time estimates and task breakdown). Each subject was clearly separated for better time and workload management
 
 We also used notebooks occasionally to sketch ideas, but Figma was our main collaboration tool. It allowed us to visualize and draw in real time, making it easier to share ideas and stay aligned throughout the project.
@@ -95,8 +99,8 @@ The virtual cube was built in Unity using a multi-camera setup. We followed a po
 
 
 **Challenges and Refinements**
-**Issue:** As well as the limitation of the screen we gonna do the curved screen projection but then the range that we can borrow the projector and to cube is not good quality enough so we decided no to do all of the 3 sides but will put in on the future work tho becuase it's can leads to collab game play as well as the servo motor that when we control by the controller the cube will automatically rotate with out any manual moveement but in the end it's just too much work 
-**Solution:** we switched for rotating cube to be just 
+**Issue:** We planned to use curved screen projection and display on all three sides of the cube, but the available projectors lacked the quality and range needed. We also considered using a servo motor to auto-rotate the cube via controller input, but it became too complex and time-consuming.
+**Solution:** Due to time and technical limitations, we scaled down to a single-side projection. Although Lieven suggested a setup to project onto three sides, it required a higher-mounted projector and more effort than we could manage within our timeframe. This idea will be considered for future development.
 
 **3.Building Each Scene**</br>
 
@@ -134,7 +138,6 @@ Bam have to write that
 **Issue:**
 **Solution:**
 We firstly tried connecting Unity to Madmapper. However, because of the license issues we couldn't use it. We decided to switch to Touchdesigner where we used Syphon Package by Keijiro, however this method caused issuees with Kantanmapper, Then we used this [this video](https://www.youtube.com/watch?v=iIwcqgAPVWI) to connect the Unity Scene to Touchdesigner, in an alternative way, using [Klak Spout] (https://github.com/keijiro/KlakSpout) package. This worked better with the Kantanmapper so we decided to stick with that method. 
-
 ## Final Project Images 
 
 ---
@@ -143,10 +146,13 @@ We firstly tried connecting Unity to Madmapper. However, because of the license 
 ## User Testing
 ---
 ## Bibliography
+
+**Common Resources**
 - An Immense World
 - https://www.youtube.com/watch?v=iIwcqgAPVWI
 - https://github.com/keijiro/KlakSpout
 - https://www.youtube.com/watch?v=oCwE5ayHgjM
-- 
-- 
+- https://rethinkpriorities.org/research-area/does-critical-flicker-fusion-frequency-track-the-subjective-experience-of-time/
+- https://www.gresham.ac.uk/watch-now/animal-senses-how-do-they-perceive-world-and-what-important-things-can-they
+- https://www.gresham.ac.uk/watch-now/animal-senses-how-do-they-perceive-world-and-what-important-things-can-they
 ---
