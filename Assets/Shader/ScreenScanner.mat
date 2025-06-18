@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ScreenScanner
-  m_Shader: {fileID: -6465566751694194690, guid: 34d07c5271cc449558b950f298ba88c1,
+  m_Name: NewScreenScanner
+  m_Shader: {fileID: -6465566751694194690, guid: 12a6a2ff8eaf54ea686b80d752ce4d17,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -28,6 +28,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_aef4acd39a3b4b7a8d1e0f5418d5dcc7_Texture_1_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -42,11 +46,20 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Opacity: 97.781555
-    - _Range: 2.4649415
-    - _WaveFallof: 2.2
+<<<<<<< Updated upstream
+    - _Opacity: 10.51618
+    - _Range: 99.42647
+=======
+    - _Opacity: 11.238698
+    - _Range: 98.62367
+>>>>>>> Stashed changes
+    - _WaveFalloff: 2.2
+    - _WaveFaloff: 2.2
     m_Colors:
-    - _Color: {r: 0.32959747, g: 3.1229632, b: 4.110274, a: 0}
-    - _DENEME: {r: 0.008588195, g: 1, b: 0, a: 0}
-    - _Position: {r: -1556.98, g: 1.75, b: 694.92004, a: 0}
+    - _Color: {r: 0.4145302, g: 1.650475, b: 2.04373, a: 0}
+<<<<<<< Updated upstream
+    - _Position: {r: -0.25852954, g: 3.000515, b: 65.74468, a: 0}
+=======
+    - _Position: {r: 0.15111414, g: 1.975939, b: 3.9000058, a: 0}
+>>>>>>> Stashed changes
   m_BuildTextureStacks: []

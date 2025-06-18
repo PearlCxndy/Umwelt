@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/dog_scene.unity
     guid: 6c20ed45d4ebd40df8a16fa95e142c57
   - enabled: 1
-    path: Assets/Scenes/Bat.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
     path: Assets/Scenes/Octopus.unity
     guid: 7c30240a284634ee7880126eeeac922b
+  - enabled: 1
+    path: Assets/Scenes/Bat.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
