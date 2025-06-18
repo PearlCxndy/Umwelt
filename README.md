@@ -18,6 +18,11 @@ The interaction happens as the diagram below, where the user spins the cube to e
 ## Proccess
 
 **1. Ideation**
+When we were having a brainstorming session as a group, we thought about how dogs can smell the past existences, movements, occassions within a spacial setting. This was our starting point, in order to use the time perception as a comparsion between human and non-human beings. After this, we went into a deep and extensive phase of research where we used variety of resources such as books, articles, videos, podcasts, museums, and bird recordings lol. 
+
+This research phase made us realize we can expand the idea of time perception into various different sensory experiences. This also gave us ideas on creating a variety of playable experiences, and we could support our design proccess with a wide range of resources.
+
+
 **2. Research**
 **3.Building Each Scene**
 **4.Making the Digital Cube**
