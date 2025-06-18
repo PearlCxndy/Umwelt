@@ -15,6 +15,30 @@ The interaction happens as the diagram below, where the user spins the cube to e
 
 ![image](https://github.com/user-attachments/assets/6f8c7ca7-5303-4598-86ab-dc3d2b6b9617)
 
+**Technical Equipment**
+  
+  **Hardware**
+  
+- Cardboard box
+- Rotary encoder
+- Arduino Uno
+- Breadboard
+- 
+  **Software**
+
+- TouchDesigner
+- Unity
+- Github Desktop
+- Arduino IDE
+- Visual Studio Code
+- Fusion 360
+- Rhino Software
+- Blender 
+
+  **Design Parts**
+  
+- Cardboard cube (30x30cm)
+- Acrylic turntable with metal bearings
 
 ## Proccess
 
@@ -41,16 +65,19 @@ After finsihing the ideation and  research phases we moved on to buiding our own
 
 **4.Making the Digital Cube**</br>
 
-To
+PEARL
 
 **5. Merging the Digital Cube with the Individual Scenes**</br>
 
+PEARL 
 **6. Modeling and Laser Cutting the Revolving Cube**</br>
 
 **7. Projection Mapping**</br>
 
+We firstly tried connecting Unity to Madmapper. However, because of the license isssues we couldn't use it. We decided to switch to sweet old Touchdesigner. 
 
 ## Final Project Images 
+
 ---
 ## Github/ ChatGPT Link
 ---
