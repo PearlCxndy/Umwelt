@@ -4,11 +4,13 @@
 
 ## Project Description
 
-The project aims to reflect non-human organisms sensory experiences of world, through an interactive digital installation. The project name is the term, "Umwelt" that has been mentioned in the book *An Immense World* by Ed Yong. This termtranslates to "environment" or "surroundings" but also connotes the particular perspective of a particular organism, shaped by its sensory organs capabilities and perceptual systems.
+The project aims to reflect non-human organisms sensory experiences of world, through an interactive digital installation. The project name is the term, "Umwelt" that has been mentioned in the book *An Immense World* by Ed Yong. This termtranslates to "environment" or "surroundings" but also connotes the particular perspective of a particular organism, shaped by its sensory organs capabilities and perceptual systems. Our aim was to expand the vision of non-human beings into humans' sensory world, to allow them to  
 
 ---
 ## Technical Description
----
+The project is an interactive, projection mapped, revolving cube. A digital environment of four different animals' visions, is reflected as a game (made in Unity) on each vertical face. The revolving happens manually and an autoencoder reads the rotation data and sends it into Unity and to Touhdesigner(for projection mapping), consecutivley. 
+
+
 ## Proccess
 
 **1. Ideation**
