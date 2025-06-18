@@ -61,7 +61,9 @@ Finally we made a visual library where we collected environments, characters, sh
 
 **3.Building Each Scene**</br>
 
-After finsihing the ideation and  research phases we moved on to buiding our own individual scenes, where each of us chose an animal and created a scene for it.
+After finsihing the ideation and  research phases we moved on to buiding our own individual scenes, where each of us chose one of the animals and created a scene for it.
+
+EVERYONE INDIVIDUALLY
 
 **4.Making the Digital Cube**</br>
 
