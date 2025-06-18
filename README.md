@@ -143,6 +143,8 @@ We firstly tried connecting Unity to Madmapper. However, because of the license 
 ## User Testing
 ---
 ## Bibliography
+
+**Common Resources**
 - An Immense World
 - https://www.youtube.com/watch?v=iIwcqgAPVWI
 - https://github.com/keijiro/KlakSpout
