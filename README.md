@@ -17,7 +17,9 @@ The interaction happens as the diagram below, where the user spins the cube to e
 
 **Technical Equipment**
   
-<table width="100%">
+<div align="center">
+
+<table width="80%">
   <tr>
     <td width="50%" valign="top">
       <h3>Hardware</h3>
@@ -43,6 +45,9 @@ The interaction happens as the diagram below, where the user spins the cube to e
     </td>
   </tr>
 </table>
+
+</div>
+
 
 
   ![pictures]()
