@@ -46,11 +46,20 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+<<<<<<< Updated upstream
     - _Opacity: 10.51618
     - _Range: 99.42647
+=======
+    - _Opacity: 11.238698
+    - _Range: 98.62367
+>>>>>>> Stashed changes
     - _WaveFalloff: 2.2
     - _WaveFaloff: 2.2
     m_Colors:
     - _Color: {r: 0.4145302, g: 1.650475, b: 2.04373, a: 0}
+<<<<<<< Updated upstream
     - _Position: {r: -0.25852954, g: 3.000515, b: 65.74468, a: 0}
+=======
+    - _Position: {r: 0.15111414, g: 1.975939, b: 3.9000058, a: 0}
+>>>>>>> Stashed changes
   m_BuildTextureStacks: []

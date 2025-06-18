@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta
 guid: 3659c5ef288cd47b6a02821658ef0f48
 NativeFormatImporter:
+========
+guid: 02a49d59c39314f678eb3982664293e9
+DefaultImporter:
+>>>>>>>> Stashed changes:Assets/BAT/CM_Final_08.sln.meta
   externalObjects: {}
   mainObjectFileID: 11400000
   userData: 

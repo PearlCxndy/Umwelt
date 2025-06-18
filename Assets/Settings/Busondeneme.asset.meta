@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 <<<<<<<< Updated upstream:Assets/Settings/Busondeneme.asset.meta
 guid: d1e29b05c9fe24c548f1658c56199f96
 NativeFormatImporter:
@@ -8,6 +9,19 @@ DefaultImporter:
 >>>>>>>> Stashed changes:Assets/BAT/CM_Final_08.sln.meta
   externalObjects: {}
   mainObjectFileID: 11400000
+=======
+<<<<<<<< Updated upstream:Assets/Shader/ScreenScanner.mat.meta
+guid: 644d7740ced2b4ef9a28b35b04d94641
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+========
+guid: d1e29b05c9fe24c548f1658c56199f96
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+>>>>>>>> Stashed changes:Assets/Settings/Busondeneme.asset.meta
+>>>>>>> Stashed changes
   userData: 
   assetBundleName: 
   assetBundleVariant: 
