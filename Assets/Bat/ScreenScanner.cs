@@ -20,12 +20,6 @@ public class ScreenScanner : MonoBehaviour
             Debug.Log("Click detected! Starting scan...");
             StartCoroutine(SceneScanning());
         }
-        if (Input.anyKeyDown)
-            {
-                Debug.Log("Click detected! Starting scan...");
-                StartCoroutine(SceneScanning());
-
-            }
     }
 
     public IEnumerator SceneScanning()

@@ -776,10 +776,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 0.0,
-            "y": 0.0,
-            "width": 0.0,
-            "height": 0.0
+            "x": 3485.5,
+            "y": 134.0,
+            "width": 200.0,
+            "height": 41.0
         }
     },
     "m_Slots": [
@@ -1248,10 +1248,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 0.0,
-            "y": 0.0,
-            "width": 0.0,
-            "height": 0.0
+            "x": 3485.5,
+            "y": 93.0,
+            "width": 200.0,
+            "height": 41.0
         }
     },
     "m_Slots": [
@@ -1555,7 +1555,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "425d99397b5e453e8891bbed1fa451f0",
     "m_Id": 0,
-    "m_DisplayName": "WaveFaloff",
+    "m_DisplayName": "WaveFalloff",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -4118,10 +4118,10 @@
     "m_Guid": {
         "m_GuidSerialized": "b06dbb4e-e118-4fbc-a8cc-e717eb356330"
     },
-    "m_Name": "WaveFaloff",
+    "m_Name": "WaveFalloff",
     "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "WaveFaloff",
-    "m_DefaultReferenceName": "_WaveFaloff",
+    "m_RefNameGeneratedByDisplayName": "WaveFalloff",
+    "m_DefaultReferenceName": "_WaveFalloff",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
     "m_UseCustomSlotLabel": false,

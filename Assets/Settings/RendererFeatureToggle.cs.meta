@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: a50fe2e62e6934e7c99f4b4bf8acca44
+guid: 19db849d0827040c8b29deb590ccd84a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - screenMat: {fileID: 2100000, guid: e6373a01aa61e4f3d818af54c1be4c0a, type: 2}
-  - screenObject: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
