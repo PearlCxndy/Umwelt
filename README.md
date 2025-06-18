@@ -147,6 +147,7 @@ We firstly tried connecting Unity to Madmapper. However, because of the license 
 - https://www.youtube.com/watch?v=iIwcqgAPVWI
 - https://github.com/keijiro/KlakSpout
 - https://www.youtube.com/watch?v=oCwE5ayHgjM
-- 
-- 
+- https://rethinkpriorities.org/research-area/does-critical-flicker-fusion-frequency-track-the-subjective-experience-of-time/
+- https://www.gresham.ac.uk/watch-now/animal-senses-how-do-they-perceive-world-and-what-important-things-can-they
+- https://www.gresham.ac.uk/watch-now/animal-senses-how-do-they-perceive-world-and-what-important-things-can-they
 ---
