@@ -58,6 +58,8 @@ The interaction happens as the diagram below, where the user spins the cube to e
 
 During our group brainstorming, we were inspired by how dogs can smell traces of the past—movements and events in a space. This sparked our initial idea to explore time perception in humans vs. non-human animals. As we dug into references, we gradually narrowed the scope, eventually focusing on environmental and urban concepts shaped by animal perception.We focused our research on the question: How could we represent non-human senses through immersive tech? This guided our design and technical choices. We considered visiting the Nerve Lab in Holborn and attending a movement workshop, an idea suggested by Mahalia to help us explore physical interaction in immersive spaces. Although we didn’t manage to visit, it remains a strong possibility for future development. At CSM’s Art & Science department, we tested our ideas and received valuable feedback. Mahalia also helped us refine the concept by suggesting ways to represent animal senses—like sight, smell, and sound—through immersive technology.
 
+![image](https://github.com/user-attachments/assets/eece033d-8cd6-4d99-b65a-f3c79883c07d)
+
 **Challenges and Refinements**
 
 **Issue:** We originally planned to explore time perception, but due to limitations in Unity gameplay, we narrowed the focus to animal perception to create a more immersive experience. Some larger ideas were dropped due to budget constraints, and CCI couldn’t provide resources like a big screen or interactive space. We had also hoped to contact additional experts and collaborators to support the project, but time constraints made this difficult. However, it would be a valuable direction to pursue in the future.
