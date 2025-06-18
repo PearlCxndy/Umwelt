@@ -42,11 +42,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Opacity: 20.98784
-    - _Range: 87.79129
+    - _Opacity: 31.934162
+    - _Range: 75.62871
     - _WaveFallof: 2.2
     m_Colors:
     - _Color: {r: 0.32959747, g: 3.1229632, b: 4.110274, a: 0}
     - _DENEME: {r: 0.008588195, g: 1, b: 0, a: 0}
-    - _Position: {r: -1558.13, g: 1.75, b: 694.92004, a: 0}
+    - _Position: {r: -1556.98, g: 1.75, b: 694.92004, a: 0}
   m_BuildTextureStacks: []
