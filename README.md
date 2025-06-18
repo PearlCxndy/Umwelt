@@ -46,11 +46,17 @@ The interaction happens as the diagram below, where the user spins the cube to e
 
 When we were having a brainstorming session as a group, we thought about how dogs can smell the past existences, movements, occassions within a spacial setting. This was our starting point, in order to use the time perception as a comparsion between human and non-human beings. 
 
+**Challenges and Refinements**
+
+
+
 **2. Research**</br>
 
 After deciding on the idea of the project, we went into a deep and extensive phase of research where we used variety of resources such as books, articles, videos, podcasts, museums, and bird recordings lol. 
 
 This research phase made us realize we can expand the idea of time perception into various different sensory experiences. This also gave us ideas on creating a variety of playable experiences, and we could support our design proccess with a wide range of resources.
+
+**Challenges and Refinements**
 
 **3. Technical and Visual Research**</br>
 We explored some of the interactions, technologies, environments and tools that  we can implement our idea together. We brainstormed some immersive experiences such as using an [immersive domes](https://www.limelight.art/portfolio/magical-dome-the-many-faces-of-entropy), or projecting on [curved screens](https://discussions.unity.com/t/360-panorama-curved-screen/884403). Our final idea was to use a rotating cube, since this gives a clearer and more interactive shift between each animal vision (game scene). We were inspired by [this project]() we found online
@@ -58,6 +64,9 @@ We explored some of the interactions, technologies, environments and tools that 
 We decided  to use Unity as a tool with integrated shaders that would reflect the required sensory information.
 Finally we made a visual library where we collected environments, characters, shaders, and color pallettes that might be implemented into the project to have a comprehensive overall outcome.
 
+**Challenges and Refinements**
+**Issue:**
+**Solution:**
 
 **3.Building Each Scene**</br>
 
@@ -69,13 +78,31 @@ EVERYONE INDIVIDUALLY
 
 PEARL
 
+**Challenges and Refinements**
+**Issue:**
+**Solution:**
+
 **5. Merging the Digital Cube with the Individual Scenes**</br>
 
-PEARL 
+PEARL (Github) 
+
+**Challenges and Refinements**
+**Issue:**
+**Solution:**
+
 **6. Modeling and Laser Cutting the Revolving Cube**</br>
+
+**Challenges and Refinements**
+Ceci have to write that 
+**Issue:**
+**Solution:**
 
 **7. Projection Mapping**</br>
 
+**Challenges and Refinements**
+Bam have to write that 
+**Issue:**
+**Solution:**
 We firstly tried connecting Unity to Madmapper. However, because of the license isssues we couldn't use it. We decided to switch to sweet old Touchdesigner. 
 
 ## Final Project Images 
