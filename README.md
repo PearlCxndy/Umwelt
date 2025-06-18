@@ -83,8 +83,7 @@ For primary research, we visited the Natural History Museum in London and the Na
 
 **3. Technical and Visual Research**</br>
 
-We explored different technologies and environments to bring our idea to life. Some early concepts included immersive domes and curved screen projections, inspired by projects like this immersive dome and curved screen projection in Unity. Eventually, we chose to use a rotating cube as our main interaction method, as it allowed us to clearly and interactively switch between different animal perspectives (game scenes). The rotating cube idea was inspired by a project we found on YouTube using projection mapping with Unity, Leap Motion, and servo motors. We aimed to create a similarly immersive experience, potentially enhancing it with our own tech setup.
-
+We explored different technologies and environments to bring our idea to life. Some early concepts included immersive domes and curved screen projections, inspired by projects like this immersive dome and curved screen projection in Unity. Eventually, we chose to use a rotating cube as our main interaction method, as it allowed us to clearly and interactively switch between different animal perspectives (game scenes). We were inspired by [this project](https://www.youtube.com/watch?v=oCwE5ayHgjM) we found online. The rotating cube idea was inspired by a project we found on YouTube using projection mapping with Unity, Leap Motion, and servo motors. We aimed to create a similarly immersive experience, potentially enhancing it with our own tech setup.
 ![Figma pics?]()
 
 
@@ -134,7 +133,7 @@ Ceci have to write that
 Bam have to write that 
 **Issue:**
 **Solution:**
-We firstly tried connecting Unity to Madmapper. However, because of the license issues we couldn't use it. We decided to switch to Touchdesigner. Where we used [this video](https://www.youtube.com/watch?v=iIwcqgAPVWI) to connect the Unity Scene to Touchdesigner using [Klak Spout](https://github.com/keijiro/KlakSpout) package. 
+We firstly tried connecting Unity to Madmapper. However, because of the license issues we couldn't use it. We decided to switch to Touchdesigner where we used Syphon Package by Keijiro, however this method caused issuees with Kantanmapper, Then we used this [this video](https://www.youtube.com/watch?v=iIwcqgAPVWI) to connect the Unity Scene to Touchdesigner, in an alternative way, using [Klak Spout] (https://github.com/keijiro/KlakSpout) package. This worked better with the Kantanmapper so we decided to stick with that method. 
 
 ## Final Project Images 
 
@@ -144,4 +143,10 @@ We firstly tried connecting Unity to Madmapper. However, because of the license 
 ## User Testing
 ---
 ## Bibliography
+- An Immense World
+- https://www.youtube.com/watch?v=iIwcqgAPVWI
+- https://github.com/keijiro/KlakSpout
+- https://www.youtube.com/watch?v=oCwE5ayHgjM
+- 
+- 
 ---
