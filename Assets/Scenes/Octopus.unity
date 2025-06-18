@@ -5961,6 +5961,57 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2249698729500113543, guid: 341ea0a7407164f95b6a0de136eb1e13, type: 3}
+--- !u!1 &1692988595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1692988597}
+  - component: {fileID: 1692988596}
+  m_Layer: 0
+  m_Name: syphon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1692988596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692988595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59ae4f317f9b4f8b8d64f71768aaea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <KeepAlpha>k__BackingField: 1
+  <Resources>k__BackingField: {fileID: 11400000, guid: 4f35cf6570beb4605a26cd2d71c4f8fc,
+    type: 2}
+  _serverName: Syphon Server
+  _captureMethod: 0
+  _sourceCamera: {fileID: 0}
+  _sourceTexture: {fileID: 0}
+--- !u!4 &1692988597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692988595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.1743357, y: 3.1594203, z: -2.6458607}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1711827645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8195,6 +8246,7 @@ SceneRoots:
   - {fileID: 398955756}
   - {fileID: 198588488}
   - {fileID: 1622460818}
+  - {fileID: 1692988597}
   - {fileID: 458341046}
   - {fileID: 483644963}
   - {fileID: 2060113394}
