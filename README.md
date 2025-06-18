@@ -17,28 +17,34 @@ The interaction happens as the diagram below, where the user spins the cube to e
 
 **Technical Equipment**
   
-  **Hardware**
-  
-- Cardboard box
-- Rotary encoder
-- Arduino Uno
-- Breadboard
-- 
-  **Software**
-
-- TouchDesigner
-- Unity
-- Github Desktop
-- Arduino IDE
-- Visual Studio Code
-- Fusion 360
-- Rhino Software
-- Blender 
-
-  **Design Parts**
-  
-- Cardboard cube (30x30cm)
-- Acrylic turntable with metal bearings
+<table>
+  <tr>
+    <th>Hardware</th>
+    <th>Software</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>Cardboard box</li>
+        <li>Rotary encoder</li>
+        <li>Arduino Uno</li>
+        <li>Breadboard</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>TouchDesigner</li>
+        <li>Unity</li>
+        <li>GitHub Desktop</li>
+        <li>Arduino IDE</li>
+        <li>Visual Studio Code</li>
+        <li>Fusion 360</li>
+        <li>Rhino Software</li>
+        <li>Blender</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
   ![pictures]()
 
