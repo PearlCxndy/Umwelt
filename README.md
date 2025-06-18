@@ -4,7 +4,7 @@
 
 ## Project Description
 
-The project aims to reflect non-human organisms sensory experiences of world, through an interactive digital installation. The project name is derived from the term we found in the book *An Immense World*
+The project aims to reflect non-human organisms sensory experiences of world, through an interactive digital installation. The project name is the term, "Umwelt" that has been mentioned in the book *An Immense World* by Ed Yong. This termtranslates to "environment" or "surroundings" but also connotes the particular perspective of a particular organism, shaped by its sensory organs capabilities and perceptual systems.
 
 ---
 ## Technical Description
