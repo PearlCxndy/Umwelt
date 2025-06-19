@@ -96,7 +96,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 71a5e0d7dcd7c4e72934e384c5079af0,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -266,12 +267,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159818766}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d59ae4f317f9b4f8b8d64f71768aaea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <KeepAlpha>k__BackingField: 1
+  <KeepAlpha>k__BackingField: 0
   <Resources>k__BackingField: {fileID: 11400000, guid: 4f35cf6570beb4605a26cd2d71c4f8fc,
     type: 2}
   _serverName: Syphon Server
@@ -577,7 +578,7 @@ Camera:
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
@@ -600,7 +601,7 @@ Camera:
   field of view: 15
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -742,6 +743,7 @@ GameObject:
   - component: {fileID: 1877515366}
   - component: {fileID: 1877515365}
   - component: {fileID: 1877515367}
+  - component: {fileID: 1877515368}
   m_Layer: 0
   m_Name: GroundSpawner
   m_TagString: Untagged
@@ -792,6 +794,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screenMat: {fileID: 2100000, guid: 342311b485b7e4c6f9b5fbe533f414ea, type: 2}
   screenObject: {fileID: 99153721}
+--- !u!114 &1877515368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877515364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65bce7ed125f4bafb8fca45aa08aecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skyboxMaterial: {fileID: 0}
+  ambientIntensity: 1
+  ambientMode: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
