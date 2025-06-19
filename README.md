@@ -4,14 +4,14 @@
 
 ## Project Description
 
-The project aims to reflect non-human organisms sensory experiences of world, through an interactive digital installation. The project name is the term, "Umwelt" that has been mentioned in the book *An Immense World* by Ed Yong. This termtranslates to "environment" or "surroundings" but also connotes the particular perspective of a particular organism, shaped by its sensory organs capabilities and perceptual systems. This project aims to make the user to asks philosophical questions such as "How does is my perception is shaping the way I think" and ethical questions as "Is the ideal world I am imagining for myself is also ideal for another species". The project aims to help the user locate themseles (as humans) within the world, equally with all of their neighbours that they are sharing this world. 
+The project's goal is to create an interactive digital installation that mimics the sensory experiences of non-human species. According to Ed Yong's book *An Immense World*, the phrase "Umwelt" is the project name. In addition to meaning "environment" or "surroundings," this phrase also refers to an organism's unique viewpoint, which is influenced by its perceptual systems and sensory organs. This project seeks to provoke the user to consider ethical and philosophical issues, such as "Is the ideal world I am imagining for myself also ideal for another species?" and "How does my perception shape the way I think?" As humans, the project seeks to assist the user in finding their place in the world, on an equal footing with all of their neighbours. 
 
 ---
 ## Technical Description
 
-The project is an interactive, projection mapped, revolving cube. A digital environment of four different animals' (Bird, Dog, Octupus, Bat) visions, are reflected as a game environment (made with Unity) on each vertical face. The revolving happens manually and an autoencoder reads the rotation data and sends it into Unity and then to Touhdesigner (for projection mapping), consecutivley. 
+The project is a rotating cube that is interactive and projection mapped. Each vertical face displays a game world created using Unity that reflects the digital environments of four distinct animals: birds, dogs, octopuses, and bats. Rotation is done manually, and the rotation data is read by an autoencoder, which subsequently delivers it to Unity and Touhdesigner (for projection mapping). 
 
-The interaction happens as the diagram below, where the user spins the cube to explore the sensory visions of four different animals  and can enter into the scene and navigate in a  playable way.
+The user can join the scenario and navigate in a playable manner by spinning the cube to explore the sensory views of four distinct animals, as shown in the diagram below.
 
 ![image](https://github.com/user-attachments/assets/6f8c7ca7-5303-4598-86ab-dc3d2b6b9617)
 
@@ -56,49 +56,50 @@ The interaction happens as the diagram below, where the user spins the cube to e
 
 **1. Ideation**</br>
 
-During our group brainstorming, we were inspired by how dogs can smell traces of the past—movements and events in a space. This sparked our initial idea to explore time perception in humans vs. non-human animals. As we dug into references, we gradually narrowed the scope, eventually focusing on environmental and urban concepts shaped by animal perception.We focused our research on the question: How could we represent non-human senses through immersive tech? This guided our design and technical choices. We considered visiting the Nerve Lab in Holborn and attending a movement workshop, an idea suggested by Mahalia to help us explore physical interaction in immersive spaces. Although we didn’t manage to visit, it remains a strong possibility for future development. At CSM’s Art & Science department, we tested our ideas and received valuable feedback. Mahalia also helped us refine the concept by suggesting ways to represent animal senses—like sight, smell, and sound—through immersive technology.
+The ability of canines to detect remnants of the past—movements and occurrences in a space—inspired our group brainstorming. This gave rise to our original plan to investigate how humans and non-human animals perceive time. We progressively focused on urban and environmental notions influenced by animal perception as we explored further into references.How can we use immersive technology to depict non-human senses? was the main topic of our investigation. This informed our technological and design decisions. In order to better investigate physical engagement in immersive places, Mahalia advised that we go to the Nerve Lab in Holborn and take a movement session. Even though we were unable to visit, there is still a good chance that it may develop in the future. We tested our concepts at CSM's Art & Science department and got insightful criticism. Mahalia also assisted us in honing the idea by offering ideas for using immersive technology to depict animal senses including sight, smell, and hearing.
 
 ![image](https://github.com/user-attachments/assets/eece033d-8cd6-4d99-b65a-f3c79883c07d)
 
 **Challenges and Refinements**
 
-**Issue:** We originally planned to explore time perception, but due to limitations in Unity gameplay, we narrowed the focus to animal perception to create a more immersive experience. Some larger ideas were dropped due to budget constraints, and CCI couldn’t provide resources like a big screen or interactive space. We had also hoped to contact additional experts and collaborators to support the project, but time constraints made this difficult. However, it would be a valuable direction to pursue in the future.
+**Issue:** We had originally intended to investigate time perception, but in order to make the experience more immersive, we limited the focus to animal perception because of Unity's gameplay constraints. Due to financial limitations, some larger concepts were abandoned, and CCI was unable to supply resources like an interactive area or a wide screen. In order to support the initiative, we also intended to get in touch with other specialists and partners, but time constraints made this challenging. It would be worthwhile to follow in the future, though.
 
-**Solution:** To manage the project effectively, we used tools like Notion and Figma. With a team of four, communication could have been difficult, but Notion helped us assign and adjust tasks easily (see Figure 1 for our time estimates and task breakdown). Each subject was clearly separated for better time and workload management
+**Solution:** Notion and Figma were among the tools we utilised to efficiently manage the project. It may have been challenging to communicate as a four-person team, but Notion made it simple to assign and modify tasks (see Figure 1 for our time estimations and work breakdown). Clear divisions between the subjects allowed for improved time and workload management.
 
-We also used notebooks occasionally to sketch ideas, but Figma was our main collaboration tool. It allowed us to visualize and draw in real time, making it easier to share ideas and stay aligned throughout the project.
+Although we occasionally drew ideas in notebooks as well, Figma served as our primary platform for cooperation. It made it simpler to exchange ideas and maintain project alignment by enabling us to sketch and visualise in real time.
 
 ![figma&notion]()
 
 
 **2. Research**</br>
 
-After finalizing our concept, we entered a deep research phase using various sources. Jessica recommended An Immense World by Ed Yong, which explores how animals perceive the world through different senses. We also pulled information from online articles (see bibliography), YouTube videos, Spotify podcasts, and more. 
+Once our concept was complete, we started a thorough research phase using a variety of sources. Ed Yong's An Immense environment, which examines how animals use their senses to comprehend the environment, was suggested by Jessica. Additionally, we gathered data from YouTube videos, Spotify podcasts, internet articles (refer to the bibliography), and more. 
 
-For primary research, we visited the Natural History Museum in London and the National Museum of Scotland. These trips had a big impact—we observed how museums present animal perception through interactive installations. We also recorded rare bird sounds ourselves, since many weren’t available online; these recordings are featured in Ceci Branch’s work.
+We went to the National Museum of Scotland and the Natural History Museum in London for primary research. These excursions had a significant influence; we saw how interactive exhibits at museums depict animal perception. Since many of the unusual bird sounds weren't accessible online, we also captured them ourselves; Ceci Branch's work includes these recordings.
 
 ![image](https://github.com/user-attachments/assets/7678e10e-050d-440f-bb42-ad27dbbca1a0)
 
 **Challenges and Refinements**
-**Issue:** We faced time constraints that limited our ability to visit more museums, and some useful articles were behind paywalls. Although we couldn’t finish the entire book Jessica recommended (An Immense World), the specific chapters we did read were valuable.
-**Solution:** Despite the limitations, this research phase helped us see how time perception could be explored through multiple sensory experiences. It inspired us to design a range of interactive elements. We focused on gathering detailed information for each animal to make their unique perceptions feel real in the final experience.
+**Issue:** We were unable to visit more museums due to time constraints, and other helpful publications were protected by paywalls. The chapters we did read of Jessica's suggested book, An Immense World, were worthwhile even if we were unable to finish it
+**Solution:** Even its shortcomings, this phase of the research helped us to realise how various senses could be applied to probe time perception. It inspired us to produce a range of interactive elements. We focused on gathering thorough knowledge about every animal so that their unique views felt real at the end.
 
 **3. Technical and Visual Research**</br>
 
-We explored different technologies and environments to bring our idea to life. Some early concepts included immersive domes and curved screen projections, inspired by projects like this immersive dome and curved screen projection in Unity. Eventually, we chose to use a rotating cube as our main interaction method, as it allowed us to clearly and interactively switch between different animal perspectives (game scenes). We were inspired by [this project](https://www.youtube.com/watch?v=oCwE5ayHgjM) we found online. The rotating cube idea was inspired by a project we found on YouTube using projection mapping with Unity, Leap Motion, and servo motors. We aimed to create a similarly immersive experience, potentially enhancing it with our own tech setup.
+We looked at several technologies and configurations to realise our idea. Inspired by projects like Unity's immersive dome and curved screen projection, several early concepts incorporated immersive domes and curved screens. At last, we chose to largely engage utilising a spinning cube since it allowed us clearly and interactively change between many animal viewpoints (game scenarios). We arrived over [this project](https://www.youtube.com/watch?v=oCwE5ayHgjM).) online and derived inspiration from Inspired by a project we came upon on YouTube using Unity, Leap Motion, and servo motors, the spinning cube idea sprang from projection mapping with Unity. Our aim was to create a similarly immersive experience, maybe enhanced by our own technology setup.
 ![Figma pics?]()
 
 
-Moreover, we decided to build the project in Unity, using shaders to reflect each animal’s unique sensory perception. To stay organized and cohesive, we created a visual library with references for environments, characters, shaders, and color palettes. Each of the cube’s four sides represents a different animal, with each team member responsible for designing one scene. These scenes were developed individually, then pushed to GitHub and merged by Pearl
+We also decided to make the project in Unity using shaders representing the unique sensory experience of every animal. To maintain coherence and order, we created a visual library with references for environments, characters, shaders, and colour palleties. Every team member is in charge of creating one scenario, and each of the four sides of the cube shows an other animal. These scenes evolved independently, then merged by Pearl after being pushed to GitHub.
 
-The virtual cube was built in Unity using a multi-camera setup. We followed a portal rendering tutorial to assign each face to a specific scene and the physical cube and turntable underneath were 3D modeled by Ceci and laser-cut for assembly which will explain more later
+Unity constructed the virtual cube under a multi-camera configuration. Using a gateway rendering tutorial, we allocated each face to a certain scene; the physical cube and turntable beneath were 3D designed by Ceci and laser-cut for assembly, which will be covered further later.
 
 ![Figma pics]()
 
 
 **Challenges and Refinements**
-**Issue:** We planned to use curved screen projection and display on all three sides of the cube, but the available projectors lacked the quality and range needed. We also considered using a servo motor to auto-rotate the cube via controller input, but it became too complex and time-consuming.
-**Solution:** Due to time and technical limitations, we scaled down to a single-side projection. Although Lieven suggested a setup to project onto three sides, it required a higher-mounted projector and more effort than we could manage within our timeframe. This idea will be considered for future development.
+
+**Issue:** Though the current projectors lacked the quality and range required, we had intended to use curved screen projection and display on all three sides of the cube. We also thought of auto-rotating the cube using a servo motor via controller input, but it turned out too difficult and time-consuming.
+**Solution:** Time and technical constraints drove us to scale down to a single-side projection. Lieven proposed a configuration whereby we could display onto three sides, but it needed a higher-mounted projector and more work than we could have handled in our available time. Future expansion will take this concept into consideration.
 
 **3.Building Each Scene**</br>
 
@@ -108,34 +109,61 @@ EVERYONE INDIVIDUALLY
 
 **4.Making the Digital Cube**</br>
 
-PEARL
+We first constructed a virtual replica in Unity to see how the finished cube may appear and operate before building the actual one. This let us test concepts, play about with camera configurations, and learn how each scene might be shown interactively. Originally, we wanted to apply projection mapping on a revolving cube and mix all animal sequences. But syncing scenes, cube movement, and projection mapping brought a lot of complexity that called for a change of direction.
 
 **Challenges and Refinements**
-**Issue:**
-**Solution:**
+**Issue:** We struggled how to maintain every scene dynamic while projecting maps onto a revolving cube. Our original scheme called for rotating all scenes utilising hardware and programs. We tested several input techniques—mouse drag, arrow keys, encoder with Arduino—but coordinating camera angles, cube rotation, and scene transitions proved challenging—especially since every scene had distinct camera distances and prefab setups.
+
+**Solution:** We discovered [a tutorial on portal cameras](https://www.youtube.com/watch?v=VituktEvIY8), It provided a simpler, more efficient means of replicating every scenario on several sides of the cube. We group five Unity cameras—one primary and one for each cube face—into a single spinning GameObject. We first used automatic rotation, then moved to mouse drag, arrow key input, and then Arduino included a rotational encoder. Serial data sent by the encoder into Unity sets Unity into rotation.
+We developed a decoy preview system—akin to a character selection screen—to manage scene transitions so users could rotate the cube and see various animal habitats. We also created a custom script adapting for various scene layouts by syncing camera orientation with cube rotation. Future projection mapping integration was put in motion by this approach, which also made the experience more participatory and immersive.
+
+![digital cube]()
+
 
 **5. Merging the Digital Cube with the Individual Scenes**</br>
 
-PEARL (Github) 
+Every team member worked on unique Unity sceneries connected to distinct cube faces to create our interactive experience. We constructed a virtual version in Unity to see the finished cube and test the interaction before construction of the actual cube started. The idea was to spin a digital cube linking each face to a distinct animal picture, therefore producing a smooth, immersive change. Like a character choosing screen, we also created a preview scene so users may explore settings before starting the real gaming.
+
+## Challenge
+The primary difficulty arose in trying to combine every scene into a single workable Unity project. Using many Unity versions caused compatibility problems including broken shaders and conflicts between Burst versions. Prefab linkages and supplies were sometimes lost during merger, needing hand reassignment. Especially with Unity metadata and `.DS_Store` files, merge conflicts created numerous problems and prompted us to often revert and restart branches. Additionally upsetting the visual flow were uneven lighting and skyboxes between scenes. Standardising became difficult also because the gameplay viewpoints differed: octopus and dog utilised third-person, while bat and bird used first-person.
+
+## Solution
+To stop more compatibility problems, we standardised the Unity version on every device. Shaders were changed, and mass application of materials to a few chosen objects helped to more effectively allocate them. Frequent commits, regular backups, and rigorous debugging helped to resolve merging conflicts. Using portal cameras and grouping them into a revolving cube object that coordinated with an Arduino rotary encoder, we aimed at scene consistency. We created a sphere around every camera and positioned shaders inside to replicate scene environments, therefore resolving illumination discrepancies. Finally, open communication and daily team meetings enabled us to rapidly fix issues, match our processes, and effectively combine all parts into one interactive system.
 
 **Challenges and Refinements**
-**Issue:**
-**Solution:**
+
+**Issue:** The primary difficulty arose in trying to combine every scene into a single workable Unity project. Using many Unity versions caused compatibility problems including broken shaders and conflicts between Burst versions. Prefab linkages and supplies were sometimes lost during merger, needing hand reassignment. Especially with Unity metadata and `.DS_Store` files, merge conflicts created numerous problems and prompted us to often revert and restart branches. Additionally upsetting the visual flow were uneven lighting and skyboxes between scenes. Standardising became difficult also because the gameplay viewpoints differed: octopus and dog utilised third-person, while bat and bird used first-person.
+
+**Solution:** We standardised the Unity version on every device to stop more compatibility issues. Mass material application to a few selected objects helped to more precisely distribute shaders updated for a few selected components. Regular backups, frequent commits, and thorough debugging assisted merging issues to be resolved. We targeted at scene consistency using portal cameras and arranging them into a spinning cube object coordinated with an Arduino rotary encoder. We built a sphere around each camera and placed shaders within to duplicate scene environments, so addressing lighting variations. At last, daily team meetings and open communication helped us to quickly resolve problems, match our procedures, and properly unite all components into one interactive system.
 
 **6. Modeling and Laser Cutting the Revolving Cube**</br>
 
+We developed laser-cut files using Fusion 360, then extruded them into 3D to show the complete assembly after creating 2D drawings of the cube's surfaces. Seeing the digital model provided us confidence going into production and enabled us to know how the elements will fit.
+
+We tested the turntable early on using cardboard and marbles. The marbles proved unsatisfactory; they were erratic and inconsistent. Changing to metal ball bearings greatly enhanced rotation, therefore smoothing out the machine and increasing dependability. Laser-cut acrylic, which we also used instead of cardboard, provided superior durability, accuracy, and a smoother finish for the framework. From rough prototype to a working, polished build, this update represented a definite step ahead.
+
 **Challenges and Refinements**
-Ceci have to write that 
-**Issue:**
+
+**Issue:** 
+
+Designing the turntable involved several tough choices. We were short on time and the fabrication lab was full during finals, hence we wanted something quick to construct, structurally sound, but without using 3D printing. Our aim was to keep using laser cutting and layer materials to create a working basis. Surprisingly entertaining and low-stress, we began experimenting with cardboard and marbles to test the bearing mechanism. Moving into acrylic and metal bearings, however, brought increased precise demands and challenging alignment issues.Technically, the Arduino and Unity Serial Port connectivity caused us much trouble. Values were first erratic and we lacked reliable rotation input. That was annoying since we knew that this one hurdle was essential for syncing the physical and digital cubes and felt as though everything was held up by it. Syncing the speed between the real and virtual cubes also introduced still another level of difficulty. It was difficult when things did not match our expectations, particularly considering the effort both sides had put in.
+
 **Solution:**
+
+Designing the turntable involved several tough choices. We were short on time and the fabrication lab was full during finals, hence we wanted something quick to construct, structurally sound, but without using 3D printing. Our aim was to keep using laser cutting and layer materials to create a working basis. Surprisingly entertaining and low-stress, we began experimenting with cardboard and marbles to test the bearing mechanism. Moving into acrylic and metal bearings, however, brought increased precise demands and challenging alignment issues.Technically, the Arduino and Unity Serial Port connectivity caused us much trouble. Values were first erratic and we lacked reliable rotation input. That was annoying since we knew that this one hurdle was essential for syncing the physical and digital cubes and felt as though everything was held up by it. Syncing the speed between the real and virtual cubes also introduced still another level of difficulty. It was difficult when things did not match our expectations, particularly considering the effort both sides had put in.
 
 **7. Projection Mapping**</br>
 
+To improve the immersive experience, we intended to project images onto a physical box we built. First, we looked at ways to link Unity to projection tools and came upon [**KlakSyphon**](https://github.com/keijiro/KlakSyphon?tab=readme-ov-file), and effectively tested it using MadMapper. The setup went perfectly, but since the MadMapper trial version adds a watermark, we planned to get a license from CCI for usage during our final playtest
+
 **Challenges and Refinements**
-Bam have to write that 
 **Issue:**
+Given our quite simple projection needs, Lieven from the DarkLab advised looking at free options like MapMap or TouchDesigner after consulting him. But we soon discovered MapMap was no longer supported and unable to find a trustworthy download. We turned to TouchDesigner, which first worked utilising the **SyphonSpout In TOP** to get the Unity feed. The problems started when we mapped using **KantanMapper**. Although it worked the first time, restarting the Unity scene usually caused the projection output in KantanMapper to glitch, fade, or vanish totally, therefore compromising the setup.
+
 **Solution:**
-We firstly tried connecting Unity to Madmapper. However, because of the license issues we couldn't use it. We decided to switch to Touchdesigner where we used Syphon Package by Keijiro, however this method caused issuees with Kantanmapper, Then we used this [this video](https://www.youtube.com/watch?v=iIwcqgAPVWI) to connect the Unity Scene to Touchdesigner, in an alternative way, using [Klak Spout] (https://github.com/keijiro/KlakSpout) package. This worked better with the Kantanmapper so we decided to stick with that method. 
+We tried utilising TouchDesigner Pro and swapping machines to help with the instability, but the issues continued. Every time Unity was turned on, we had to essentially close and reopen TouchDesigner, then manually apply the projection mapping as a temporary fix. Though tiresome and not perfect, it kept the project under progress. We told the staff our trouble with the free alternatives on the day of the playtest, and they then gave us a MadMapper license. This let us present a consistent and professional projection experience throughout the last show.
+
+
 ## Final Project Images 
 
 ---
@@ -153,4 +181,13 @@ We firstly tried connecting Unity to Madmapper. However, because of the license 
 - https://rethinkpriorities.org/research-area/does-critical-flicker-fusion-frequency-track-the-subjective-experience-of-time/
 - https://www.gresham.ac.uk/watch-now/animal-senses-how-do-they-perceive-world-and-what-important-things-can-they
 - https://www.gresham.ac.uk/watch-now/animal-senses-how-do-they-perceive-world-and-what-important-things-can-they
+
+**technical resources**
+- https://www.reddit.com/r/Unity3D/comments/x0h9m6/do_you_work_with_multiple_scenes_at_the_same_time/
+- https://blenderartists.org/t/how-to-create-a-portal-to-another-scene-within-my-scene/1257163
+- https://discussions.unity.com/t/is-it-possible-to-run-two-or-more-scenes-in-parallel/936294
+- https://discussions.unity.com/t/project-view-from-a-camera-of-other-scene/863913/2
+- https://www.youtube.com/watch?v=zObWVOv1GlE
+- https://www.youtube.com/results?search_query=portal+in+different+scene+unity
+  
 ---
