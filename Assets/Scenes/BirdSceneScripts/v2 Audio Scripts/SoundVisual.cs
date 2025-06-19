@@ -52,6 +52,10 @@ public class SoundVisual : MonoBehaviour
     public Transform canvasParent;  
 
 
+    public Transform playerTransform; //to track player position
+
+
+
     void Start()
     {
         source = GetComponent<AudioSource>();
@@ -141,52 +145,97 @@ public class SoundVisual : MonoBehaviour
 
     //make cubes move
     private void UpdateVisual()
-{
-    int visualIndex = 0;
-    int spectrumIndex = 0;
-    int averageSize = (int)(SAMPLE_SIZE * keepPercentage) / amnVisual;
-
-    while (visualIndex < amnVisual)
     {
-        int j = 0;
-        float sum = 0;
+        int visualIndex = 0;
+        int spectrumIndex = 0;
+        int averageSize = (int)(SAMPLE_SIZE * keepPercentage) / amnVisual;
 
-        while (j < averageSize && spectrumIndex < spectrum.Length)
+        while (visualIndex < amnVisual)
         {
-            sum += spectrum[spectrumIndex];
-            spectrumIndex++;
-            j++;
+            int j = 0;
+            float sum = 0;
+
+            while (j < averageSize && spectrumIndex < spectrum.Length)
+            {
+                sum += spectrum[spectrumIndex];
+                spectrumIndex++;
+                j++;
+            }
+
+            float scaleY = sum / averageSize * visualModifier;
+            visualScale[visualIndex] -= Time.deltaTime * smoothSpeed;
+
+            if (visualScale[visualIndex] < scaleY)
+            {
+                visualScale[visualIndex] = scaleY;
+            }
+
+            if (visualScale[visualIndex] > maxVisualScale)
+            {
+                visualScale[visualIndex] = maxVisualScale;
+            }
+
+            // Use base scale and only modify Y
+            Vector3 baseScale = baseScales[visualIndex];
+            Vector3 newScale = new Vector3(
+                baseScale.x,
+                baseScale.y + visualScale[visualIndex],
+                baseScale.z
+            );
+
+            visualList[visualIndex].localScale = newScale;
+            visualIndex++;
         }
-
-        float scaleY = sum / averageSize * visualModifier;
-        visualScale[visualIndex] -= Time.deltaTime * smoothSpeed;
-
-        if (visualScale[visualIndex] < scaleY)
-        {
-            visualScale[visualIndex] = scaleY;
-        }
-
-        if (visualScale[visualIndex] > maxVisualScale)
-        {
-            visualScale[visualIndex] = maxVisualScale;
-        }
-
-        // Use base scale and only modify Y
-        Vector3 baseScale = baseScales[visualIndex];
-        Vector3 newScale = new Vector3(
-            baseScale.x,
-            baseScale.y + visualScale[visualIndex],
-            baseScale.z
-        );
-
-        visualList[visualIndex].localScale = newScale;
-        visualIndex++;
     }
-}
+    
+    private AudioSource FindClosestAudioSource()
+    {
+        AudioSource[] allSources = FindObjectsOfType<AudioSource>();
 
+        AudioSource closest = null;
+        float minDistance = float.MaxValue;
+
+        foreach (AudioSource source in allSources)
+        {
+            float dist = Vector3.Distance(playerTransform.position, source.transform.position);
+            if (dist < minDistance && source.isPlaying)
+            {
+                minDistance = dist;
+                closest = source;
+            }
+        }
+
+        return closest;
+    }
+
+    private AudioSource currentSource;
     private void AnalyzeSound()
     {
-        source.GetOutputData(samples, 0); //takes array of samples and channel
+        //source.GetOutputData(samples, 0); //takes array of samples and channel
+        //// get sound spectrum
+        // source.GetSpectrumData(spectrum, 0, FFTWindow.BlackmanHarris);
+
+        // if (currentSource == null || !currentSource.isPlaying)
+        // {
+        //     currentSource = FindClosestAudioSource();
+        // }
+
+        // if (currentSource != null)
+        // {
+        //     currentSource.GetOutputData(samples, 0);
+        //     currentSource.GetSpectrumData(spectrum, 0, FFTWindow.BlackmanHarris);
+        //     Debug.DrawLine(playerTransform.position, currentSource.transform.position, Color.cyan);
+        // }
+        // else
+        // {
+        //     // fallback to silence
+        //     Array.Clear(samples, 0, samples.Length);
+        //     Array.Clear(spectrum, 0, spectrum.Length);
+        // }
+
+        AudioListener.GetOutputData(samples, 0);
+        AudioListener.GetSpectrumData(spectrum, 0, FFTWindow.BlackmanHarris);
+
 
         //get rms value
         int i = 0;
@@ -203,9 +252,7 @@ public class SoundVisual : MonoBehaviour
         dbValue = 20 * Mathf.Log10(rmsValue / 0.1f);
 
 
-        // get sound spectrum
 
-        source.GetSpectrumData(spectrum, 0, FFTWindow.BlackmanHarris);
 
 
         //find pitch value
