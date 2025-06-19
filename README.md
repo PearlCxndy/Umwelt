@@ -6,6 +6,9 @@
 
 The project's goal is to create an interactive digital installation that mimics the sensory experiences of non-human species. According to Ed Yong's book *An Immense World*, the phrase "Umwelt" is the project name. In addition to meaning "environment" or "surroundings," this phrase also refers to an organism's unique viewpoint, which is influenced by its perceptual systems and sensory organs. This project seeks to provoke the user to consider ethical and philosophical issues, such as "Is the ideal world I am imagining for myself also ideal for another species?" and "How does my perception shape the way I think?" As humans, the project seeks to assist the user in finding their place in the world, on an equal footing with all of their neighbours. 
 
+
+![13](https://github.com/user-attachments/assets/f3ea9109-a223-432e-a26e-42c026747d2d)
+
 ---
 ## Technical Description
 
@@ -168,6 +171,9 @@ We tried utilising TouchDesigner Pro and swapping machines to help with the inst
 ## Github/ ChatGPT Link
 ---
 ## User Testing
+
+![12](https://github.com/user-attachments/assets/e760b9c0-9356-4b9a-a45c-c48fb1328944)
+
 ---
 ## Bibliography
 
