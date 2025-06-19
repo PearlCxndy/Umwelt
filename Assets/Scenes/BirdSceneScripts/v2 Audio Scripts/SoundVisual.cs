@@ -215,23 +215,23 @@ public class SoundVisual : MonoBehaviour
         //// get sound spectrum
         // source.GetSpectrumData(spectrum, 0, FFTWindow.BlackmanHarris);
 
-        // if (currentSource == null || !currentSource.isPlaying)
-        // {
-        //     currentSource = FindClosestAudioSource();
-        // }
+        if (currentSource == null || !currentSource.isPlaying)
+        {
+            currentSource = FindClosestAudioSource();
+        }
 
-        // if (currentSource != null)
-        // {
-        //     currentSource.GetOutputData(samples, 0);
-        //     currentSource.GetSpectrumData(spectrum, 0, FFTWindow.BlackmanHarris);
-        //     Debug.DrawLine(playerTransform.position, currentSource.transform.position, Color.cyan);
-        // }
-        // else
-        // {
-        //     // fallback to silence
-        //     Array.Clear(samples, 0, samples.Length);
-        //     Array.Clear(spectrum, 0, spectrum.Length);
-        // }
+        if (currentSource != null)
+        {
+            currentSource.GetOutputData(samples, 0);
+            currentSource.GetSpectrumData(spectrum, 0, FFTWindow.BlackmanHarris);
+            Debug.DrawLine(playerTransform.position, currentSource.transform.position, Color.cyan);
+        }
+        else
+        {
+            // fallback to silence
+            Array.Clear(samples, 0, samples.Length);
+            Array.Clear(spectrum, 0, spectrum.Length);
+        }
 
         AudioListener.GetOutputData(samples, 0);
         AudioListener.GetSpectrumData(spectrum, 0, FFTWindow.BlackmanHarris);
