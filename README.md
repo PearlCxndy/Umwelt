@@ -172,6 +172,8 @@ We tried utilising TouchDesigner Pro and swapping machines to help with the inst
 ---
 ## User Testing
 
+We prepared a comfortable and informal user testing session based on our previous UX/UI experience. Our process consisted of four steps: a pre-task questionnaire, scenario setting, prototype interaction, and a post-task questionnaire. The primary goals were to examine the interaction design of scene navigation, evaluate object interaction for each animal, and investigate how users' opinions on non-human perception changed throughout the encounter. We disregarded standard performance indicators because we were more concerned with open exploration than precise tasks. Instead, we used basic performance metrics such as time on task and self-reported feedback obtained via a Likert scale questionnaire.
+
 ![12](https://github.com/user-attachments/assets/e760b9c0-9356-4b9a-a45c-c48fb1328944)
 
 ---
