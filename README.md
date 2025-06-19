@@ -50,7 +50,7 @@ The user can join the scenario and navigate in a playable manner by spinning the
 
 
 
-  ![pictures]()
+  ![pictures](https://github.com/user-attachments/assets/9ab194ff-7be1-42fa-8daf-0cea1b3f671d)
 
 ## Proccess
 
@@ -68,7 +68,7 @@ The ability of canines to detect remnants of the past—movements and occurrence
 
 Although we occasionally drew ideas in notebooks as well, Figma served as our primary platform for cooperation. It made it simpler to exchange ideas and maintain project alignment by enabling us to sketch and visualise in real time.
 
-![figma&notion]()
+![figma&notion](https://github.com/user-attachments/assets/f4767422-0624-4379-b478-302d108995e2)
 
 
 **2. Research**</br>
@@ -86,14 +86,11 @@ We went to the National Museum of Scotland and the Natural History Museum in Lon
 **3. Technical and Visual Research**</br>
 
 We looked at several technologies and configurations to realise our idea. Inspired by projects like Unity's immersive dome and curved screen projection, several early concepts incorporated immersive domes and curved screens. At last, we chose to largely engage utilising a spinning cube since it allowed us clearly and interactively change between many animal viewpoints (game scenarios). We arrived over [this project](https://www.youtube.com/watch?v=oCwE5ayHgjM).) online and derived inspiration from Inspired by a project we came upon on YouTube using Unity, Leap Motion, and servo motors, the spinning cube idea sprang from projection mapping with Unity. Our aim was to create a similarly immersive experience, maybe enhanced by our own technology setup.
-![Figma pics?]()
 
 
 We also decided to make the project in Unity using shaders representing the unique sensory experience of every animal. To maintain coherence and order, we created a visual library with references for environments, characters, shaders, and colour palleties. Every team member is in charge of creating one scenario, and each of the four sides of the cube shows an other animal. These scenes evolved independently, then merged by Pearl after being pushed to GitHub.
 
 Unity constructed the virtual cube under a multi-camera configuration. Using a gateway rendering tutorial, we allocated each face to a certain scene; the physical cube and turntable beneath were 3D designed by Ceci and laser-cut for assembly, which will be covered further later.
-
-![Figma pics]()
 
 
 **Challenges and Refinements**
@@ -117,7 +114,7 @@ We first constructed a virtual replica in Unity to see how the finished cube may
 **Solution:** We discovered [a tutorial on portal cameras](https://www.youtube.com/watch?v=VituktEvIY8), It provided a simpler, more efficient means of replicating every scenario on several sides of the cube. We group five Unity cameras—one primary and one for each cube face—into a single spinning GameObject. We first used automatic rotation, then moved to mouse drag, arrow key input, and then Arduino included a rotational encoder. Serial data sent by the encoder into Unity sets Unity into rotation.
 We developed a decoy preview system—akin to a character selection screen—to manage scene transitions so users could rotate the cube and see various animal habitats. We also created a custom script adapting for various scene layouts by syncing camera orientation with cube rotation. Future projection mapping integration was put in motion by this approach, which also made the experience more participatory and immersive.
 
-![digital cube]()
+![digital cube](https://github.com/user-attachments/assets/c02ee90b-9308-4d7c-9fb9-3f44d70e198f)
 
 
 **5. Merging the Digital Cube with the Individual Scenes**</br>
@@ -129,6 +126,8 @@ Every team member worked on unique Unity sceneries connected to distinct cube fa
 **Issue:** The primary difficulty arose in trying to combine every scene into a single workable Unity project. Using many Unity versions caused compatibility problems including broken shaders and conflicts between Burst versions. Prefab linkages and supplies were sometimes lost during merger, needing hand reassignment. Especially with Unity metadata and `.DS_Store` files, merge conflicts created numerous problems and prompted us to often revert and restart branches. Additionally upsetting the visual flow were uneven lighting and skyboxes between scenes. Standardising became difficult also because the gameplay viewpoints differed: octopus and dog utilised third-person, while bat and bird used first-person.
 
 **Solution:** We standardised the Unity version on every device to stop more compatibility issues. Mass material application to a few selected objects helped to more precisely distribute shaders updated for a few selected components. Regular backups, frequent commits, and thorough debugging assisted merging issues to be resolved. We targeted at scene consistency using portal cameras and arranging them into a spinning cube object coordinated with an Arduino rotary encoder. We built a sphere around each camera and placed shaders within to duplicate scene environments, so addressing lighting variations. At last, daily team meetings and open communication helped us to quickly resolve problems, match our procedures, and properly unite all components into one interactive system.
+
+![github](https://github.com/user-attachments/assets/2cdebac3-5c97-42ba-aad4-b1c34033e522)
 
 **6. Modeling and Laser Cutting the Revolving Cube**</br>
 
@@ -146,6 +145,8 @@ Designing the turntable involved several tough choices. We were short on time an
 
 Designing the turntable involved several tough choices. We were short on time and the fabrication lab was full during finals, hence we wanted something quick to construct, structurally sound, but without using 3D printing. Our aim was to keep using laser cutting and layer materials to create a working basis. Surprisingly entertaining and low-stress, we began experimenting with cardboard and marbles to test the bearing mechanism. Moving into acrylic and metal bearings, however, brought increased precise demands and challenging alignment issues.Technically, the Arduino and Unity Serial Port connectivity caused us much trouble. Values were first erratic and we lacked reliable rotation input. That was annoying since we knew that this one hurdle was essential for syncing the physical and digital cubes and felt as though everything was held up by it. Syncing the speed between the real and virtual cubes also introduced still another level of difficulty. It was difficult when things did not match our expectations, particularly considering the effort both sides had put in.
 
+![progress](https://github.com/user-attachments/assets/c17edde0-8e2b-4154-8125-aac61aeddced)
+
 **7. Projection Mapping**</br>
 
 To improve the immersive experience, we intended to project images onto a physical box we built. First, we looked at ways to link Unity to projection tools and came upon [**KlakSyphon**](https://github.com/keijiro/KlakSyphon?tab=readme-ov-file), and effectively tested it using MadMapper. The setup went perfectly, but since the MadMapper trial version adds a watermark, we planned to get a license from CCI for usage during our final playtest
@@ -156,6 +157,8 @@ Given our quite simple projection needs, Lieven from the DarkLab advised looking
 
 **Solution:**
 We tried utilising TouchDesigner Pro and swapping machines to help with the instability, but the issues continued. Every time Unity was turned on, we had to essentially close and reopen TouchDesigner, then manually apply the projection mapping as a temporary fix. Though tiresome and not perfect, it kept the project under progress. We told the staff our trouble with the free alternatives on the day of the playtest, and they then gave us a MadMapper license. This let us present a consistent and professional projection experience throughout the last show.
+
+![Projection Mapping](https://github.com/user-attachments/assets/45f56694-d674-4f83-8e6b-1bb09c831667)
 
 
 ## Final Project Images 
