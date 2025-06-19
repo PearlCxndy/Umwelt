@@ -175,19 +175,17 @@ We tried utilising TouchDesigner Pro and swapping machines to help with the inst
 
 **Common Resources**
 - An Immense World
-- https://www.youtube.com/watch?v=iIwcqgAPVWI
-- https://github.com/keijiro/KlakSpout
-- https://www.youtube.com/watch?v=oCwE5ayHgjM
-- https://rethinkpriorities.org/research-area/does-critical-flicker-fusion-frequency-track-the-subjective-experience-of-time/
-- https://www.gresham.ac.uk/watch-now/animal-senses-how-do-they-perceive-world-and-what-important-things-can-they
-- https://www.gresham.ac.uk/watch-now/animal-senses-how-do-they-perceive-world-and-what-important-things-can-they
+- Programming for People (2018) Spout for Unity (Texture sharing for other programs) Resolume, Touchdesigner, VVVV. https://www.youtube.com/watch?v=iIwcqgAPVWI.
+- Keijiro (no date) GitHub - keijiro/KlakSpout: Spout plugin for Unity. https://github.com/keijiro/KlakSpout.
+- pixelasm (2016b) Interactive projection mapping done with Unity 3d, Leap Motion and Arduino / Uniduino / Adafruit. https://www.youtube.com/watch?v=oCwE5ayHgjM.
+- Does critical flicker-fusion frequency track the subjective experience of time? - Rethink Priorities (2024b). https://rethinkpriorities.org/research-area/does-critical-flicker-fusion-frequency-track-the-subjective-experience-of-time/.
+- Animal senses: how do they perceive the world and what important things can they sense that we cannot? | Gresham College (no date b). https://www.gresham.ac.uk/watch-now/animal-senses-how-do-they-perceive-world-and-what-important-things-can-they.
 
 **technical resources**
-- https://www.reddit.com/r/Unity3D/comments/x0h9m6/do_you_work_with_multiple_scenes_at_the_same_time/
-- https://blenderartists.org/t/how-to-create-a-portal-to-another-scene-within-my-scene/1257163
-- https://discussions.unity.com/t/is-it-possible-to-run-two-or-more-scenes-in-parallel/936294
-- https://discussions.unity.com/t/project-view-from-a-camera-of-other-scene/863913/2
-- https://www.youtube.com/watch?v=zObWVOv1GlE
-- https://www.youtube.com/results?search_query=portal+in+different+scene+unity
+- WarriorWork (2016) Do YOU work with multiple scenes at the same time? https://www.reddit.com/r/Unity3D/comments/x0h9m6/do_you_work_with_multiple_scenes_at_the_same_time/ (Accessed: June 19, 2025).
+- How to create a “portal” to another scene within my scene? (2020). https://blenderartists.org/t/how-to-create-a-portal-to-another-scene-within-my-scene/1257163 (Accessed: June 19, 2025).
+- Is it possible to run two or more scenes in parallel? (2023). https://discussions.unity.com/t/is-it-possible-to-run-two-or-more-scenes-in-parallel/936294.
+- Project view from a camera of other scene (2021). https://discussions.unity.com/t/project-view-from-a-camera-of-other-scene/863913/2.
+- Unity (2020) How to work with multiple scenes in Unity. https://www.youtube.com/watch?v=zObWVOv1GlE.
   
 ---
