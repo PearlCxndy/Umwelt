@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "ExpandedTemporalities_New.sln"
+    "dotnet.defaultSolution": "ExpandedTemporalities.sln"
 }
