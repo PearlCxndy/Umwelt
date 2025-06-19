@@ -145,7 +145,8 @@ Designing the turntable involved several tough choices. We were short on time an
 
 Designing the turntable involved several tough choices. We were short on time and the fabrication lab was full during finals, hence we wanted something quick to construct, structurally sound, but without using 3D printing. Our aim was to keep using laser cutting and layer materials to create a working basis. Surprisingly entertaining and low-stress, we began experimenting with cardboard and marbles to test the bearing mechanism. Moving into acrylic and metal bearings, however, brought increased precise demands and challenging alignment issues.Technically, the Arduino and Unity Serial Port connectivity caused us much trouble. Values were first erratic and we lacked reliable rotation input. That was annoying since we knew that this one hurdle was essential for syncing the physical and digital cubes and felt as though everything was held up by it. Syncing the speed between the real and virtual cubes also introduced still another level of difficulty. It was difficult when things did not match our expectations, particularly considering the effort both sides had put in.
 
-![progress](https://github.com/user-attachments/assets/c17edde0-8e2b-4154-8125-aac61aeddced)
+![progress](https://github.com/user-attachments/assets/6431ac35-be8b-44fe-8cac-54a93211e377)
+
 
 **7. Projection Mapping**</br>
 
