@@ -107,9 +107,7 @@ Unity constructed the virtual cube under a multi-camera configuration. Using a g
 
 ### 3.Building Each Scene</br>
 
-After finsihing the ideation and  research phases we moved on to buiding our own individual scenes, where each of us chose one of the animals and created a scene for it.
-
-EVERYONE INDIVIDUALLY
+After finsihing the ideation and  research phases we moved on to buiding our own individual scenes, where each of us chose one of the animals and created a scene for it. The processes are explained in detail in the Individual Contributions section.
 
 ### 4.Making the Digital Cube</br>
 
@@ -154,17 +152,21 @@ We tested the turntable early on using cardboard and marbles. The marbles proved
 
 ### 7. Projection Mapping</br>
 
-To improve the immersive experience, we intended to project images onto a physical box we built. First, we looked at ways to link Unity to projection tools and came upon [**KlakSyphon**](https://github.com/keijiro/KlakSyphon?tab=readme-ov-file), and effectively tested it using MadMapper. The setup went perfectly, but since the MadMapper trial version adds a watermark, we planned to get a license from CCI for usage during our final playtest
+We tried MadMapper to do the projection mapping. The setup went perfectly but since the MadMapper trial version adds a watermark, we planned to get a license from CCI for usage during our final playtest. Howeve
+
+To improve the immersive experience, we intended to project images onto a physical box we built. First, we looked at ways to link Unity to projection tools and came upon [**KlakSyphon**](https://github.com/keijiro/KlakSyphon?tab=readme-ov-file), and effectively tested it using MadMapper. The setup went perfectly, 
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Challenges and Refinements**
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Issue:** Given our quite simple projection needs, Lieven from the DarkLab advised looking at free options like MapMap or TouchDesigner after consulting him. But we soon discovered MapMap was no longer supported and unable to find a trustworthy download. We turned to TouchDesigner, which first worked utilising the **SyphonSpout In TOP** to get the Unity feed. The problems started when we mapped using **KantanMapper**. Although it worked the first time, restarting the Unity scene usually caused the projection output in KantanMapper to glitch, fade, or vanish totally, therefore compromising the setup.
 
-&nbsp;&nbsp;&nbsp;&nbsp;**Solution:** We tried utilising TouchDesigner Pro and swapping machines to help with the instability, but the issues continued. Every time Unity was turned on, we had to essentially close and reopen TouchDesigner, then manually apply the projection mapping as a temporary fix. Though tiresome and not perfect, it kept the project under progress. We told the staff our trouble with the free alternatives on the day of the playtest, and they then gave us a MadMapper license. This let us present a consistent and professional projection experience throughout the last show.
+  &nbsp;&nbsp;&nbsp;&nbsp;**Solution:** We used another repository by the same developer, [**KlakSpout**]([https://github.com/keijiro/KlakSyphon?tab=readme-ov-file](https://github.com/keijiro/KlakSpout). Also we switched from Mac into a PC. This new solution allowed us to seamlessly make the projection mapping work. 
 
 ![Projection Mapping](https://github.com/user-attachments/assets/45f56694-d674-4f83-8e6b-1bb09c831667)
 
-
+---
+## 
+---
 ## Final Project Images 
 
 ---
