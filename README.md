@@ -152,9 +152,7 @@ We tested the turntable early on using cardboard and marbles. The marbles proved
 
 ### 7. Projection Mapping</br>
 
-We tried MadMapper to do the projection mapping. The setup went perfectly but since the MadMapper trial version adds a watermark, we planned to get a license from CCI for usage during our final playtest. Howeve
-
-To improve the immersive experience, we intended to project images onto a physical box we built. First, we looked at ways to link Unity to projection tools and came upon [**KlakSyphon**](https://github.com/keijiro/KlakSyphon?tab=readme-ov-file), and effectively tested it using MadMapper. The setup went perfectly, 
+To improve the immersive experience, we intended to project images onto a physical box we built. We tried MadMapper to do the projection mapping. The setup went perfectly but since the MadMapper trial version adds a watermark, we were not able to use it. Therefore, we decided switch to Touchdesigner. We used an external package for Touchdesigner [**KlakSyphon**](https://github.com/keijiro/KlakSyphon?tab=readme-ov-file), to enable the communication between Unity and Touchdesigner.
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Challenges and Refinements**
 
@@ -165,7 +163,7 @@ To improve the immersive experience, we intended to project images onto a physic
 ![Projection Mapping](https://github.com/user-attachments/assets/45f56694-d674-4f83-8e6b-1bb09c831667)
 
 ---
-## 
+## Individual Contribution
 ---
 ## Final Project Images 
 
