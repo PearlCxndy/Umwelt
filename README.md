@@ -55,15 +55,18 @@ The user can join the scenario and navigate in a playable manner by spinning the
 
   ![pictures](https://github.com/user-attachments/assets/9ab194ff-7be1-42fa-8daf-0cea1b3f671d)
 
+---
 ## Proccess
 
-**1. Ideation**</br>
+### 1. Ideation
 
 The ability of canines to detect remnants of the past—movements and occurrences in a space—inspired our group brainstorming. This gave rise to our original plan to investigate how humans and non-human animals perceive time. We progressively focused on urban and environmental notions influenced by animal perception as we explored further into references.How can we use immersive technology to depict non-human senses? was the main topic of our investigation. This informed our technological and design decisions. In order to better investigate physical engagement in immersive places, Mahalia advised that we go to the Nerve Lab in Holborn and take a movement session. Even though we were unable to visit, there is still a good chance that it may develop in the future. We tested our concepts at CSM's Art & Science department and got insightful criticism. Mahalia also assisted us in honing the idea by offering ideas for using immersive technology to depict animal senses including sight, smell, and hearing.
 
 ![image](https://github.com/user-attachments/assets/eece033d-8cd6-4d99-b65a-f3c79883c07d)
 
-**Challenges and Refinements**
+<div style="margin-left: 2em;">
+
+**Challenges and Refinements**</br>
 
 **Issue:** We had originally intended to investigate time perception, but in order to make the experience more immersive, we limited the focus to animal perception because of Unity's gameplay constraints. Due to financial limitations, some larger concepts were abandoned, and CCI was unable to supply resources like an interactive area or a wide screen. In order to support the initiative, we also intended to get in touch with other specialists and partners, but time constraints made this challenging. It would be worthwhile to follow in the future, though.
 
@@ -73,8 +76,9 @@ Although we occasionally drew ideas in notebooks as well, Figma served as our pr
 
 ![figma&notion](https://github.com/user-attachments/assets/f4767422-0624-4379-b478-302d108995e2)
 
+</div>
 
-**2. Research**</br>
+#### 2. Research
 
 Once our concept was complete, we started a thorough research phase using a variety of sources. Ed Yong's An Immense environment, which examines how animals use their senses to comprehend the environment, was suggested by Jessica. Additionally, we gathered data from YouTube videos, Spotify podcasts, internet articles (refer to the bibliography), and more. 
 
@@ -86,7 +90,7 @@ We went to the National Museum of Scotland and the Natural History Museum in Lon
 **Issue:** We were unable to visit more museums due to time constraints, and other helpful publications were protected by paywalls. The chapters we did read of Jessica's suggested book, An Immense World, were worthwhile even if we were unable to finish it
 **Solution:** Even its shortcomings, this phase of the research helped us to realise how various senses could be applied to probe time perception. It inspired us to produce a range of interactive elements. We focused on gathering thorough knowledge about every animal so that their unique views felt real at the end.
 
-**3. Technical and Visual Research**</br>
+### 3. Technical and Visual Research
 
 We looked at several technologies and configurations to realise our idea. Inspired by projects like Unity's immersive dome and curved screen projection, several early concepts incorporated immersive domes and curved screens. At last, we chose to largely engage utilising a spinning cube since it allowed us clearly and interactively change between many animal viewpoints (game scenarios). We arrived over [this project](https://www.youtube.com/watch?v=oCwE5ayHgjM).) online and derived inspiration from Inspired by a project we came upon on YouTube using Unity, Leap Motion, and servo motors, the spinning cube idea sprang from projection mapping with Unity. Our aim was to create a similarly immersive experience, maybe enhanced by our own technology setup.
 
@@ -101,26 +105,26 @@ Unity constructed the virtual cube under a multi-camera configuration. Using a g
 **Issue:** Though the current projectors lacked the quality and range required, we had intended to use curved screen projection and display on all three sides of the cube. We also thought of auto-rotating the cube using a servo motor via controller input, but it turned out too difficult and time-consuming.
 **Solution:** Time and technical constraints drove us to scale down to a single-side projection. Lieven proposed a configuration whereby we could display onto three sides, but it needed a higher-mounted projector and more work than we could have handled in our available time. Future expansion will take this concept into consideration.
 
-**3.Building Each Scene**</br>
+### 3.Building Each Scene**</br>
 
 After finsihing the ideation and  research phases we moved on to buiding our own individual scenes, where each of us chose one of the animals and created a scene for it.
 
 EVERYONE INDIVIDUALLY
 
-**4.Making the Digital Cube**</br>
+### 4.Making the Digital Cube**</br>
 
 We first constructed a virtual replica in Unity to see how the finished cube may appear and operate before building the actual one. This let us test concepts, play about with camera configurations, and learn how each scene might be shown interactively. Originally, we wanted to apply projection mapping on a revolving cube and mix all animal sequences. But syncing scenes, cube movement, and projection mapping brought a lot of complexity that called for a change of direction.
 
-**Challenges and Refinements**
-**Issue:** We struggled how to maintain every scene dynamic while projecting maps onto a revolving cube. Our original scheme called for rotating all scenes utilising hardware and programs. We tested several input techniques—mouse drag, arrow keys, encoder with Arduino—but coordinating camera angles, cube rotation, and scene transitions proved challenging—especially since every scene had distinct camera distances and prefab setups.
+&nbsp;&nbsp;&nbsp;&nbsp;**Challenges and Refinements**
+&nbsp;&nbsp;&nbsp;&nbsp;**Issue:** We struggled how to maintain every scene dynamic while projecting maps onto a revolving cube. Our original scheme called for rotating all scenes utilising hardware and programs. We tested several input techniques—mouse drag, arrow keys, encoder with Arduino—but coordinating camera angles, cube rotation, and scene transitions proved challenging—especially since every scene had distinct camera distances and prefab setups.
 
-**Solution:** We discovered [a tutorial on portal cameras](https://www.youtube.com/watch?v=VituktEvIY8), It provided a simpler, more efficient means of replicating every scenario on several sides of the cube. We group five Unity cameras—one primary and one for each cube face—into a single spinning GameObject. We first used automatic rotation, then moved to mouse drag, arrow key input, and then Arduino included a rotational encoder. Serial data sent by the encoder into Unity sets Unity into rotation.
+&nbsp;&nbsp;&nbsp;&nbsp;**Solution:** We discovered [a tutorial on portal cameras](https://www.youtube.com/watch?v=VituktEvIY8), It provided a simpler, more efficient means of replicating every scenario on several sides of the cube. We group five Unity cameras—one primary and one for each cube face—into a single spinning GameObject. We first used automatic rotation, then moved to mouse drag, arrow key input, and then Arduino included a rotational encoder. Serial data sent by the encoder into Unity sets Unity into rotation.
 We developed a decoy preview system—akin to a character selection screen—to manage scene transitions so users could rotate the cube and see various animal habitats. We also created a custom script adapting for various scene layouts by syncing camera orientation with cube rotation. Future projection mapping integration was put in motion by this approach, which also made the experience more participatory and immersive.
 
 ![digital cube](https://github.com/user-attachments/assets/c02ee90b-9308-4d7c-9fb9-3f44d70e198f)
 
 
-**5. Merging the Digital Cube with the Individual Scenes**</br>
+### 5. Merging the Digital Cube with the Individual Scenes**</br>
 
 Every team member worked on unique Unity sceneries connected to distinct cube faces to create our interactive experience. We constructed a virtual version in Unity to see the finished cube and test the interaction before construction of the actual cube started. The idea was to spin a digital cube linking each face to a distinct animal picture, therefore producing a smooth, immersive change. Like a character choosing screen, we also created a preview scene so users may explore settings before starting the real gaming.
 
