@@ -64,19 +64,16 @@ The ability of canines to detect remnants of the past—movements and occurrence
 
 ![image](https://github.com/user-attachments/assets/eece033d-8cd6-4d99-b65a-f3c79883c07d)
 
-<div style="margin-left: 2em;">
 
-**Challenges and Refinements**</br>
 
-**Issue:** We had originally intended to investigate time perception, but in order to make the experience more immersive, we limited the focus to animal perception because of Unity's gameplay constraints. Due to financial limitations, some larger concepts were abandoned, and CCI was unable to supply resources like an interactive area or a wide screen. In order to support the initiative, we also intended to get in touch with other specialists and partners, but time constraints made this challenging. It would be worthwhile to follow in the future, though.
+&nbsp;&nbsp;&nbsp;&nbsp;**Challenges and Refinements**</br>
 
-**Solution:** Notion and Figma were among the tools we utilised to efficiently manage the project. It may have been challenging to communicate as a four-person team, but Notion made it simple to assign and modify tasks (see Figure 1 for our time estimations and work breakdown). Clear divisions between the subjects allowed for improved time and workload management.
+&nbsp;&nbsp;&nbsp;&nbsp;**Issue:** We had originally intended to investigate time perception, but in order to make the experience more immersive, we limited the focus to animal perception because of Unity's gameplay constraints. Due to financial limitations, some larger concepts were abandoned, and CCI was unable to supply resources like an interactive area or a wide screen. In order to support the initiative, we also intended to get in touch with other specialists and partners, but time constraints made this challenging. It would be worthwhile to follow in the future, though.
 
-Although we occasionally drew ideas in notebooks as well, Figma served as our primary platform for cooperation. It made it simpler to exchange ideas and maintain project alignment by enabling us to sketch and visualise in real time.
+&nbsp;&nbsp;&nbsp;&nbsp;**Solution:** Notion and Figma were among the tools we utilised to efficiently manage the project. It may have been challenging to communicate as a four-person team, but Notion made it simple to assign and modify tasks (see Figure 1 for our time estimations and work breakdown). Clear divisions between the subjects allowed for improved time and workload management. Although we occasionally drew ideas in notebooks as well, Figma served as our primary platform for cooperation. It made it simpler to exchange ideas and maintain project alignment by enabling us to sketch and visualise in real time.
 
 ![figma&notion](https://github.com/user-attachments/assets/f4767422-0624-4379-b478-302d108995e2)
 
-</div>
 
 #### 2. Research
 
@@ -86,9 +83,11 @@ We went to the National Museum of Scotland and the Natural History Museum in Lon
 
 ![image](https://github.com/user-attachments/assets/7678e10e-050d-440f-bb42-ad27dbbca1a0)
 
-**Challenges and Refinements**
-**Issue:** We were unable to visit more museums due to time constraints, and other helpful publications were protected by paywalls. The chapters we did read of Jessica's suggested book, An Immense World, were worthwhile even if we were unable to finish it
-**Solution:** Even its shortcomings, this phase of the research helped us to realise how various senses could be applied to probe time perception. It inspired us to produce a range of interactive elements. We focused on gathering thorough knowledge about every animal so that their unique views felt real at the end.
+&nbsp;&nbsp;&nbsp;&nbsp;**Challenges and Refinements**
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Issue:** We were unable to visit more museums due to time constraints, and other helpful publications were protected by paywalls. The chapters we did read of Jessica's suggested book, An Immense World, were worthwhile even if we were unable to finish it.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Solution:** Even its shortcomings, this phase of the research helped us to realise how various senses could be applied to probe time perception. It inspired us to produce a range of interactive elements. We focused on gathering thorough knowledge about every animal so that their unique views felt real at the end.
 
 ### 3. Technical and Visual Research
 
@@ -100,22 +99,24 @@ We also decided to make the project in Unity using shaders representing the uniq
 Unity constructed the virtual cube under a multi-camera configuration. Using a gateway rendering tutorial, we allocated each face to a certain scene; the physical cube and turntable beneath were 3D designed by Ceci and laser-cut for assembly, which will be covered further later.
 
 
-**Challenges and Refinements**
+&nbsp;&nbsp;&nbsp;&nbsp;**Challenges and Refinements**
 
-**Issue:** Though the current projectors lacked the quality and range required, we had intended to use curved screen projection and display on all three sides of the cube. We also thought of auto-rotating the cube using a servo motor via controller input, but it turned out too difficult and time-consuming.
-**Solution:** Time and technical constraints drove us to scale down to a single-side projection. Lieven proposed a configuration whereby we could display onto three sides, but it needed a higher-mounted projector and more work than we could have handled in our available time. Future expansion will take this concept into consideration.
+&nbsp;&nbsp;&nbsp;&nbsp;**Issue:** Though the current projectors lacked the quality and range required, we had intended to use curved screen projection and display on all three sides of the cube. We also thought of auto-rotating the cube using a servo motor via controller input, but it turned out too difficult and time-consuming.
 
-### 3.Building Each Scene**</br>
+&nbsp;&nbsp;&nbsp;&nbsp;**Solution:** Time and technical constraints drove us to scale down to a single-side projection. Lieven proposed a configuration whereby we could display onto three sides, but it needed a higher-mounted projector and more work than we could have handled in our available time. Future expansion will take this concept into consideration.
+
+### 3.Building Each Scene</br>
 
 After finsihing the ideation and  research phases we moved on to buiding our own individual scenes, where each of us chose one of the animals and created a scene for it.
 
 EVERYONE INDIVIDUALLY
 
-### 4.Making the Digital Cube**</br>
+### 4.Making the Digital Cube</br>
 
 We first constructed a virtual replica in Unity to see how the finished cube may appear and operate before building the actual one. This let us test concepts, play about with camera configurations, and learn how each scene might be shown interactively. Originally, we wanted to apply projection mapping on a revolving cube and mix all animal sequences. But syncing scenes, cube movement, and projection mapping brought a lot of complexity that called for a change of direction.
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Challenges and Refinements**
+
 &nbsp;&nbsp;&nbsp;&nbsp;**Issue:** We struggled how to maintain every scene dynamic while projecting maps onto a revolving cube. Our original scheme called for rotating all scenes utilising hardware and programs. We tested several input techniques—mouse drag, arrow keys, encoder with Arduino—but coordinating camera angles, cube rotation, and scene transitions proved challenging—especially since every scene had distinct camera distances and prefab setups.
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Solution:** We discovered [a tutorial on portal cameras](https://www.youtube.com/watch?v=VituktEvIY8), It provided a simpler, more efficient means of replicating every scenario on several sides of the cube. We group five Unity cameras—one primary and one for each cube face—into a single spinning GameObject. We first used automatic rotation, then moved to mouse drag, arrow key input, and then Arduino included a rotational encoder. Serial data sent by the encoder into Unity sets Unity into rotation.
@@ -124,47 +125,42 @@ We developed a decoy preview system—akin to a character selection screen—to 
 ![digital cube](https://github.com/user-attachments/assets/c02ee90b-9308-4d7c-9fb9-3f44d70e198f)
 
 
-### 5. Merging the Digital Cube with the Individual Scenes**</br>
+### 5. Merging the Digital Cube with the Individual Scenes</br>
 
 Every team member worked on unique Unity sceneries connected to distinct cube faces to create our interactive experience. We constructed a virtual version in Unity to see the finished cube and test the interaction before construction of the actual cube started. The idea was to spin a digital cube linking each face to a distinct animal picture, therefore producing a smooth, immersive change. Like a character choosing screen, we also created a preview scene so users may explore settings before starting the real gaming.
 
-**Challenges and Refinements**
+&nbsp;&nbsp;&nbsp;&nbsp;**Challenges and Refinements**
 
-**Issue:** The primary difficulty arose in trying to combine every scene into a single workable Unity project. Using many Unity versions caused compatibility problems including broken shaders and conflicts between Burst versions. Prefab linkages and supplies were sometimes lost during merger, needing hand reassignment. Especially with Unity metadata and `.DS_Store` files, merge conflicts created numerous problems and prompted us to often revert and restart branches. Additionally upsetting the visual flow were uneven lighting and skyboxes between scenes. Standardising became difficult also because the gameplay viewpoints differed: octopus and dog utilised third-person, while bat and bird used first-person.
+&nbsp;&nbsp;&nbsp;&nbsp;**Issue:** The primary difficulty arose in trying to combine every scene into a single workable Unity project. Using many Unity versions caused compatibility problems including broken shaders and conflicts between Burst versions. Prefab linkages and supplies were sometimes lost during merger, needing hand reassignment. Especially with Unity metadata and `.DS_Store` files, merge conflicts created numerous problems and prompted us to often revert and restart branches. Additionally upsetting the visual flow were uneven lighting and skyboxes between scenes. Standardising became difficult also because the gameplay viewpoints differed: octopus and dog utilised third-person, while bat and bird used first-person.
 
-**Solution:** We standardised the Unity version on every device to stop more compatibility issues. Mass material application to a few selected objects helped to more precisely distribute shaders updated for a few selected components. Regular backups, frequent commits, and thorough debugging assisted merging issues to be resolved. We targeted at scene consistency using portal cameras and arranging them into a spinning cube object coordinated with an Arduino rotary encoder. We built a sphere around each camera and placed shaders within to duplicate scene environments, so addressing lighting variations. At last, daily team meetings and open communication helped us to quickly resolve problems, match our procedures, and properly unite all components into one interactive system.
+&nbsp;&nbsp;&nbsp;&nbsp;**Solution:** We standardised the Unity version on every device to stop more compatibility issues. Mass material application to a few selected objects helped to more precisely distribute shaders updated for a few selected components. Regular backups, frequent commits, and thorough debugging assisted merging issues to be resolved. We targeted at scene consistency using portal cameras and arranging them into a spinning cube object coordinated with an Arduino rotary encoder. We built a sphere around each camera and placed shaders within to duplicate scene environments, so addressing lighting variations. At last, daily team meetings and open communication helped us to quickly resolve problems, match our procedures, and properly unite all components into one interactive system.
 
 ![github](https://github.com/user-attachments/assets/2cdebac3-5c97-42ba-aad4-b1c34033e522)
 
-**6. Modeling and Laser Cutting the Revolving Cube**</br>
+### 6. Modeling and Laser Cutting the Revolving Cube</br>
 
 We developed laser-cut files using Fusion 360, then extruded them into 3D to show the complete assembly after creating 2D drawings of the cube's surfaces. Seeing the digital model provided us confidence going into production and enabled us to know how the elements will fit.
 
 We tested the turntable early on using cardboard and marbles. The marbles proved unsatisfactory; they were erratic and inconsistent. Changing to metal ball bearings greatly enhanced rotation, therefore smoothing out the machine and increasing dependability. Laser-cut acrylic, which we also used instead of cardboard, provided superior durability, accuracy, and a smoother finish for the framework. From rough prototype to a working, polished build, this update represented a definite step ahead.
 
-**Challenges and Refinements**
+&nbsp;&nbsp;&nbsp;&nbsp;**Challenges and Refinements**
 
-**Issue:** 
+&nbsp;&nbsp;&nbsp;&nbsp;**Issue:** Designing the turntable involved several tough choices. We were short on time and the fabrication lab was full during finals, hence we wanted something quick to construct, structurally sound, but without using 3D printing. Our aim was to keep using laser cutting and layer materials to create a working basis. Surprisingly entertaining and low-stress, we began experimenting with cardboard and marbles to test the bearing mechanism. Moving into acrylic and metal bearings, however, brought increased precise demands and challenging alignment issues.Technically, the Arduino and Unity Serial Port connectivity caused us much trouble. Values were first erratic and we lacked reliable rotation input. That was annoying since we knew that this one hurdle was essential for syncing the physical and digital cubes and felt as though everything was held up by it. Syncing the speed between the real and virtual cubes also introduced still another level of difficulty. It was difficult when things did not match our expectations, particularly considering the effort both sides had put in.
 
-Designing the turntable involved several tough choices. We were short on time and the fabrication lab was full during finals, hence we wanted something quick to construct, structurally sound, but without using 3D printing. Our aim was to keep using laser cutting and layer materials to create a working basis. Surprisingly entertaining and low-stress, we began experimenting with cardboard and marbles to test the bearing mechanism. Moving into acrylic and metal bearings, however, brought increased precise demands and challenging alignment issues.Technically, the Arduino and Unity Serial Port connectivity caused us much trouble. Values were first erratic and we lacked reliable rotation input. That was annoying since we knew that this one hurdle was essential for syncing the physical and digital cubes and felt as though everything was held up by it. Syncing the speed between the real and virtual cubes also introduced still another level of difficulty. It was difficult when things did not match our expectations, particularly considering the effort both sides had put in.
-
-**Solution:**
-
-Designing the turntable involved several tough choices. We were short on time and the fabrication lab was full during finals, hence we wanted something quick to construct, structurally sound, but without using 3D printing. Our aim was to keep using laser cutting and layer materials to create a working basis. Surprisingly entertaining and low-stress, we began experimenting with cardboard and marbles to test the bearing mechanism. Moving into acrylic and metal bearings, however, brought increased precise demands and challenging alignment issues.Technically, the Arduino and Unity Serial Port connectivity caused us much trouble. Values were first erratic and we lacked reliable rotation input. That was annoying since we knew that this one hurdle was essential for syncing the physical and digital cubes and felt as though everything was held up by it. Syncing the speed between the real and virtual cubes also introduced still another level of difficulty. It was difficult when things did not match our expectations, particularly considering the effort both sides had put in.
+&nbsp;&nbsp;&nbsp;&nbsp;**Solution:** Designing the turntable involved several tough choices. We were short on time and the fabrication lab was full during finals, hence we wanted something quick to construct, structurally sound, but without using 3D printing. Our aim was to keep using laser cutting and layer materials to create a working basis. Surprisingly entertaining and low-stress, we began experimenting with cardboard and marbles to test the bearing mechanism. Moving into acrylic and metal bearings, however, brought increased precise demands and challenging alignment issues.Technically, the Arduino and Unity Serial Port connectivity caused us much trouble. Values were first erratic and we lacked reliable rotation input. That was annoying since we knew that this one hurdle was essential for syncing the physical and digital cubes and felt as though everything was held up by it. Syncing the speed between the real and virtual cubes also introduced still another level of difficulty. It was difficult when things did not match our expectations, particularly considering the effort both sides had put in.
 
 ![progress](https://github.com/user-attachments/assets/6431ac35-be8b-44fe-8cac-54a93211e377)
 
 
-**7. Projection Mapping**</br>
+### 7. Projection Mapping</br>
 
 To improve the immersive experience, we intended to project images onto a physical box we built. First, we looked at ways to link Unity to projection tools and came upon [**KlakSyphon**](https://github.com/keijiro/KlakSyphon?tab=readme-ov-file), and effectively tested it using MadMapper. The setup went perfectly, but since the MadMapper trial version adds a watermark, we planned to get a license from CCI for usage during our final playtest
 
-**Challenges and Refinements**
-**Issue:**
-Given our quite simple projection needs, Lieven from the DarkLab advised looking at free options like MapMap or TouchDesigner after consulting him. But we soon discovered MapMap was no longer supported and unable to find a trustworthy download. We turned to TouchDesigner, which first worked utilising the **SyphonSpout In TOP** to get the Unity feed. The problems started when we mapped using **KantanMapper**. Although it worked the first time, restarting the Unity scene usually caused the projection output in KantanMapper to glitch, fade, or vanish totally, therefore compromising the setup.
+&nbsp;&nbsp;&nbsp;&nbsp;**Challenges and Refinements**
 
-**Solution:**
-We tried utilising TouchDesigner Pro and swapping machines to help with the instability, but the issues continued. Every time Unity was turned on, we had to essentially close and reopen TouchDesigner, then manually apply the projection mapping as a temporary fix. Though tiresome and not perfect, it kept the project under progress. We told the staff our trouble with the free alternatives on the day of the playtest, and they then gave us a MadMapper license. This let us present a consistent and professional projection experience throughout the last show.
+&nbsp;&nbsp;&nbsp;&nbsp;**Issue:** Given our quite simple projection needs, Lieven from the DarkLab advised looking at free options like MapMap or TouchDesigner after consulting him. But we soon discovered MapMap was no longer supported and unable to find a trustworthy download. We turned to TouchDesigner, which first worked utilising the **SyphonSpout In TOP** to get the Unity feed. The problems started when we mapped using **KantanMapper**. Although it worked the first time, restarting the Unity scene usually caused the projection output in KantanMapper to glitch, fade, or vanish totally, therefore compromising the setup.
+
+&nbsp;&nbsp;&nbsp;&nbsp;**Solution:** We tried utilising TouchDesigner Pro and swapping machines to help with the instability, but the issues continued. Every time Unity was turned on, we had to essentially close and reopen TouchDesigner, then manually apply the projection mapping as a temporary fix. Though tiresome and not perfect, it kept the project under progress. We told the staff our trouble with the free alternatives on the day of the playtest, and they then gave us a MadMapper license. This let us present a consistent and professional projection experience throughout the last show.
 
 ![Projection Mapping](https://github.com/user-attachments/assets/45f56694-d674-4f83-8e6b-1bb09c831667)
 
